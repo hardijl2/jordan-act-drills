@@ -212,6 +212,11 @@ function setSyncStatusUI() {
 // dashboard can group answers back into sessions.
 const SESSION_ID = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : ('s_' + Date.now() + '_' + Math.random().toString(36).slice(2));
 
+// Logs a full snapshot of the question (not just its id) alongside the
+// attempt, so the dashboard's "Questions Missed" detail view keeps working
+// for this attempt even after a future question-bank refresh replaces or
+// removes this exact question. Firestore Security Rules (firestore.rules)
+// require these fields to be present on every new attempt doc.
 function logAttempt(q, chosenLetter, isCorrect) {
   if (!syncOk || !db) return;
   db.collection(ATTEMPTS_COLLECTION).add({
@@ -222,6 +227,12 @@ function logAttempt(q, chosenLetter, isCorrect) {
     subtype: q.subtype,
     chosenLetter: chosenLetter,
     correct: !!isCorrect,
+    passage: q.passage,
+    question: q.question,
+    choices: q.choices,
+    correctLetter: q.correctLetter,
+    explanation: q.explanation,
+    trick: q.trick,
   }).catch(e => {
     console.warn('Attempt logging failed (continuing offline):', e);
     syncOk = false;
