@@ -68,7 +68,10 @@
   .flip-face.back { transform: rotateY(180deg); }
   .flip-face .label { position: absolute; top: 14px; left: 16px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.5px; color: var(--muted); text-transform: uppercase; }
   .flip-face .front-text { font-size: 1.35rem; font-weight: 700; color: var(--navy-dark); line-height: 1.4; }
-  .flip-face .back-text { font-size: 1rem; line-height: 1.6; color: var(--text); white-space: pre-wrap; text-align: left; max-height: 100%; overflow-y: auto; }
+  .flip-face .back-text { font-size: 1rem; line-height: 1.6; color: var(--text); white-space: pre-wrap; text-align: left; max-height: 100%; overflow-y: auto; width: 100%; }
+  .flip-face .back-text table { width: 100%; border-collapse: collapse; font-size: 0.82rem; white-space: normal; margin: 0; }
+  .flip-face .back-text th, .flip-face .back-text td { border: 1px solid var(--border); padding: 6px 8px; text-align: left; vertical-align: top; line-height: 1.35; }
+  .flip-face .back-text th { background: #eaf0f7; color: var(--navy-dark); font-weight: 700; }
   .flip-hint { text-align: center; font-size: 0.82rem; color: var(--muted); margin: -10px 0 18px; }
 
   .nav-row { display: flex; gap: 10px; margin-bottom: 10px; }
@@ -153,6 +156,41 @@ let flipped = false;
 
 function $(id) { return document.getElementById(id); }
 
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, ch => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[ch]);
+}
+
+// Card backs that are tab-separated rows (one header row + data rows) render
+// as a real HTML table instead of raw whitespace, since tabs don't line up
+// into columns reliably with a proportional font. Plain-text backs (the vast
+// majority of cards) still render as plain wrapped text via textContent.
+function isTableBack(text) {
+  return typeof text === 'string' && text.includes('\t');
+}
+
+function renderBack(text) {
+  const backEl = $('backText');
+  if (!isTableBack(text)) {
+    backEl.innerHTML = '';
+    backEl.textContent = text;
+    return;
+  }
+  const rows = text.split('\n').filter(r => r.length > 0).map(r => r.split('\t'));
+  const [headerRow, ...dataRows] = rows;
+  let html = '<table><thead><tr>';
+  headerRow.forEach(cell => { html += `<th>${escapeHtml(cell.trim())}</th>`; });
+  html += '</tr></thead><tbody>';
+  dataRows.forEach(row => {
+    html += '<tr>';
+    row.forEach(cell => { html += `<td>${escapeHtml(cell.trim())}</td>`; });
+    html += '</tr>';
+  });
+  html += '</tbody></table>';
+  backEl.innerHTML = html;
+}
+
 function renderCheckboxes() {
   const list = $('checkboxList');
   list.innerHTML = '';
@@ -197,7 +235,7 @@ function renderCard() {
   $('flipCard').classList.remove('flipped');
   flipped = false;
   $('frontText').textContent = c.front;
-  $('backText').textContent = c.back;
+  renderBack(c.back);
   $('catTag').textContent = c.category;
   $('counter').textContent = `${idx + 1} / ${deck.length}`;
   $('progressFill').style.width = `${((idx + 1) / deck.length) * 100}%`;
