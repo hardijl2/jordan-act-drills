@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jordan&#x27;s ACT Math Flashcards</title>
+<style>
+  :root {
+    --navy: #1F4E78;
+    --navy-dark: #14344f;
+    --green: #1a7f4e;
+    --bg: #f4f6f9;
+    --card: #ffffff;
+    --border: #d9e0e8;
+    --text: #1c2733;
+    --muted: #5c6b7a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 16px 60px; }
+  header { padding: 20px 4px 8px; }
+  header h1 { font-size: 1.4rem; margin: 0 0 4px; color: var(--navy-dark); }
+  header p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+  header .updated { margin: 6px 0 0; color: var(--muted); font-size: 0.78rem; font-style: italic; }
+
+  /* --- Setup screen --- */
+  #setup .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; margin-bottom: 14px; box-shadow: 0 1px 4px rgba(20,52,79,0.05); }
+  #setup h2 { font-size: 1rem; margin: 0 0 12px; color: var(--navy-dark); }
+  label.chk { display: flex; align-items: center; gap: 10px; padding: 10px 4px; border-bottom: 1px solid var(--border); cursor: pointer; font-size: 0.95rem; }
+  label.chk:last-child { border-bottom: none; }
+  label.chk input { width: 18px; height: 18px; flex-shrink: 0; }
+  label.chk .cnt { margin-left: auto; color: var(--muted); font-size: 0.82rem; }
+  .quick-btns { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+  .quick-btns button { flex: 1; min-width: 110px; background: #eaf0f7; color: var(--navy-dark); border: 1px solid var(--border); padding: 9px 8px; border-radius: 8px; font-size: 0.85rem; cursor: pointer; }
+  .quick-btns button:active { background: #dbe6f2; }
+  .btn-primary { background: var(--navy); color: #fff; border: none; padding: 13px 18px; border-radius: 8px; font-size: 1.02rem; cursor: pointer; width: 100%; font-weight: 600; }
+  .btn-primary:active { background: var(--navy-dark); }
+  .btn-primary:disabled { background: #a9b7c4; cursor: not-allowed; }
+  .shuffle-row { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; font-size: 0.92rem; }
+  .shuffle-row input { width: 18px; height: 18px; }
+
+  /* --- Study screen --- */
+  #study { display: none; }
+  .topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; font-size: 0.85rem; color: var(--muted); }
+  .topbar .tag { background: #eaf0f7; color: var(--navy-dark); padding: 4px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 600; }
+  .progress-bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin-bottom: 18px; }
+  .progress-bar .fill { height: 100%; background: var(--navy); transition: width 0.2s; }
+
+  .flip-zone { perspective: 1200px; margin-bottom: 18px; }
+  .flip-card { position: relative; width: 100%; min-height: 260px; cursor: pointer; }
+  .flip-inner {
+    position: relative; width: 100%; min-height: 260px;
+    transition: transform 0.45s; transform-style: preserve-3d;
+  }
+  .flip-card.flipped .flip-inner { transform: rotateY(180deg); }
+  .flip-face {
+    position: absolute; inset: 0; backface-visibility: hidden;
+    background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(20,52,79,0.08);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 28px 22px; text-align: center;
+  }
+  .flip-face.back { transform: rotateY(180deg); }
+  .flip-face .label { position: absolute; top: 14px; left: 16px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.5px; color: var(--muted); text-transform: uppercase; }
+  .flip-face .front-text { font-size: 1.35rem; font-weight: 700; color: var(--navy-dark); line-height: 1.4; }
+  .flip-face .back-text { font-size: 1rem; line-height: 1.6; color: var(--text); white-space: pre-wrap; text-align: left; max-height: 100%; overflow-y: auto; width: 100%; }
+  .flip-face .back-text table { width: 100%; border-collapse: collapse; font-size: 0.82rem; white-space: normal; margin: 0; }
+  .flip-face .back-text th, .flip-face .back-text td { border: 1px solid var(--border); padding: 6px 8px; text-align: left; vertical-align: top; line-height: 1.35; }
+  .flip-face .back-text th { background: #eaf0f7; color: var(--navy-dark); font-weight: 700; }
+  .flip-hint { text-align: center; font-size: 0.82rem; color: var(--muted); margin: -10px 0 18px; }
+
+  .nav-row { display: flex; gap: 10px; margin-bottom: 10px; }
+  .nav-row button { flex: 1; background: #eaf0f7; color: var(--navy-dark); border: 1px solid var(--border); padding: 12px; border-radius: 8px; font-size: 0.95rem; cursor: pointer; font-weight: 600; }
+  .nav-row button:active { background: #dbe6f2; }
+  .nav-row button:disabled { opacity: 0.45; cursor: not-allowed; }
+  .back-link { text-align: center; margin-top: 18px; }
+  .back-link a { color: var(--muted); font-size: 0.85rem; text-decoration: underline; cursor: pointer; }
+
+  #done { display: none; text-align: center; padding: 40px 16px; }
+  #done h2 { color: var(--navy-dark); }
+  #done p { color: var(--muted); margin-bottom: 20px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Jordan&#x27;s ACT Math Flashcards</h1>
+    <p>Quick-review cards for core formulas, definitions, and relationships to memorize.</p>
+    <p class="updated">Last updated: August 18, 2026 at 6:59 AM EDT</p>
+  </header>
+
+  <div id="setup">
+    <div class="card">
+      <h2>Choose categories to study</h2>
+      <div id="checkboxList"></div>
+    </div>
+    <div class="quick-btns">
+      <button id="selectAllBtn" type="button">Select All</button>
+      <button id="selectNoneBtn" type="button">Clear</button>
+    </div>
+    <div class="shuffle-row">
+      <input type="checkbox" id="shuffleChk" checked>
+      <label for="shuffleChk">Shuffle card order</label>
+    </div>
+    <button class="btn-primary" id="startBtn">Start Studying</button>
+  </div>
+
+  <div id="study">
+    <div class="topbar">
+      <span id="counter">1 / 1</span>
+      <span class="tag" id="catTag">—</span>
+    </div>
+    <div class="progress-bar"><div class="fill" id="progressFill"></div></div>
+
+    <div class="flip-zone">
+      <div class="flip-card" id="flipCard">
+        <div class="flip-inner">
+          <div class="flip-face front">
+            <span class="label">Front</span>
+            <div class="front-text" id="frontText"></div>
+          </div>
+          <div class="flip-face back">
+            <span class="label">Back</span>
+            <div class="back-text" id="backText"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flip-hint">Tap the card to flip it</div>
+
+    <div class="nav-row">
+      <button id="prevBtn">← Previous</button>
+      <button id="nextBtn">Next →</button>
+    </div>
+    <div class="back-link"><a id="backToSetup">Back to category selection</a></div>
+  </div>
+
+  <div id="done">
+    <h2>Deck complete 🎉</h2>
+    <p id="doneSummary"></p>
+    <button class="btn-primary" id="restartBtn">Study Again</button>
+  </div>
+</div>
+
+<script>
+const ALL_CARDS = [{"id": "pg-1", "category": "Plane Geometry", "front": "What do the interior angles of any triangle always sum to?", "back": "180°."}, {"id": "pg-2", "category": "Plane Geometry", "front": "What's the Exterior Angle Theorem?", "back": "An exterior angle of a triangle equals the sum of the two remote (non-adjacent) interior angles.\n\nExample: interior angles 40° and 65° → exterior angle at the third vertex = 105°."}, {"id": "pg-3", "category": "Plane Geometry", "front": "What are the side ratios for a 45-45-90 triangle?", "back": "leg : leg : hypotenuse = x : x : x√2\n\nThe hypotenuse is always leg × √2."}, {"id": "pg-4", "category": "Plane Geometry", "front": "What are the side ratios for a 30-60-90 triangle?", "back": "short leg : long leg : hypotenuse = x : x√3 : 2x\n\nTrick: the hypotenuse is always double the short leg."}, {"id": "pg-5", "category": "Plane Geometry", "front": "In any triangle, how do side lengths relate to angle sizes?", "back": "The longest side is opposite the largest angle, and the shortest side is opposite the smallest angle."}, {"id": "pg-6", "category": "Plane Geometry", "front": "How do you find an unknown side of a similar triangle?", "back": "Set up a proportion between corresponding sides and cross-multiply.\n\nside₁(small) / side₁(large) = side₂(small) / side₂(large)"}, {"id": "pg-7", "category": "Plane Geometry", "front": "What's the interior angle sum formula for any polygon?", "back": "(n − 2) × 180°, where n is the number of sides."}, {"id": "pg-8", "category": "Plane Geometry", "front": "What's the formula for each interior angle of a REGULAR polygon?", "back": "(n − 2) × 180° / n"}, {"id": "pg-9", "category": "Plane Geometry", "front": "In a parallelogram, how are consecutive angles related? Opposite angles?", "back": "Consecutive angles are supplementary (sum to 180°). Opposite angles are equal."}, {"id": "pg-10", "category": "Plane Geometry", "front": "What do all 4 angles of ANY quadrilateral sum to?", "back": "360°."}, {"id": "pg-11", "category": "Plane Geometry", "front": "What's the relationship between a circle's radius and a tangent line at the point of tangency?", "back": "They're always perpendicular (90°) — a huge shortcut for tangent-line problems."}, {"id": "pg-12", "category": "Plane Geometry", "front": "If a regular hexagon is inscribed in a circle, how does its side length relate to the circle's radius?", "back": "They're equal! A hexagon splits into 6 equilateral triangles, so hexagon side = circle radius."}, {"id": "pg-13", "category": "Plane Geometry", "front": "What are the circle formulas for circumference and area?", "back": "C = 2πr = πd\nA = πr²"}, {"id": "pg-14", "category": "Plane Geometry", "front": "How do you find the area of a composite (irregular) figure?", "back": "Split it into rectangles/triangles you know how to handle, then add or subtract their areas."}, {"id": "pg-15", "category": "Plane Geometry", "front": "What's the volume formula for a prism? A cylinder?", "back": "Prism: V = base area × height\nCylinder: V = πr²h"}, {"id": "pg-16", "category": "Plane Geometry", "front": "How many square feet are in a square yard? What's the trick for area unit conversions?", "back": "9 (not 3!) — since 1 yard = 3 feet, 1 sq yard = 3×3 = 9 sq ft.\n\nTrick: always SQUARE the linear conversion factor when converting an area."}, {"id": "cg-1", "category": "Coordinate Geometry", "front": "What's the slope formula?", "back": "m = (y₂ − y₁) / (x₂ − x₁)"}, {"id": "cg-2", "category": "Coordinate Geometry", "front": "How do slopes of parallel lines compare? Perpendicular lines?", "back": "Parallel: same slope.\n\nPerpendicular: negative reciprocals — flip the fraction and change the sign."}, {"id": "cg-3", "category": "Coordinate Geometry", "front": "What's the midpoint formula?", "back": "Midpoint = ( (x₁+x₂)/2 , (y₁+y₂)/2 )\n\nJust average the x's and average the y's."}, {"id": "cg-4", "category": "Coordinate Geometry", "front": "What's the distance formula?", "back": "d = √[ (x₂−x₁)² + (y₂−y₁)² ]\n\nIt's really just the Pythagorean theorem using the horizontal and vertical legs between two points."}, {"id": "cg-5", "category": "Coordinate Geometry", "front": "What's the standard equation of a circle?", "back": "(x − h)² + (y − k)² = r²\n\nCenter (h,k), radius r. Watch out: the right side is r², not r itself."}, {"id": "cg-6", "category": "Coordinate Geometry", "front": "What's vertex form of a parabola, and how do you read off the vertex?", "back": "y = a(x − h)² + k\n\nVertex = (h,k), read directly off the equation. The sign of a doesn't change the vertex location — only whether it opens up or down."}, {"id": "cg-7", "category": "Coordinate Geometry", "front": "How do you tell if 3 or more points are collinear?", "back": "Check that the slope between every pair of points is the same."}, {"id": "cg-8", "category": "Coordinate Geometry", "front": "If point P divides segment AB so that AP:PB = m:n, how do you find P?", "back": "P = A + [m/(m+n)] × (B − A)\n\nApply this formula to the x-coordinates and y-coordinates separately."}, {"id": "cg-9", "category": "Coordinate Geometry", "front": "How do you find the area of a right triangle whose legs run along the axes?", "back": "Area = ½ × |Δx| × |Δy| — just treat the coordinate differences as the side lengths."}, {"id": "cg-10", "category": "Coordinate Geometry", "front": "What's the general coordinate-geometry formula for the area of ANY triangle (not axis-aligned)?", "back": "Area = ½ |x₁(y₂−y₃) + x₂(y₃−y₁) + x₃(y₁−y₂)|"}, {"id": "cg-11", "category": "Coordinate Geometry", "front": "How do you tell an ellipse's equation apart from a hyperbola's?", "back": "A PLUS sign between the two squared terms = ellipse (closed oval).\n\nA MINUS sign = hyperbola (two separate branches)."}, {"id": "cg-12", "category": "Coordinate Geometry", "front": "What's the standard form of an ellipse, and what do a and b represent?", "back": "(x−h)²/a² + (y−k)²/b² = 1\n\nCenter (h,k). Horizontal axis length = 2a, vertical axis length = 2b."}, {"id": "cg-13", "category": "Coordinate Geometry", "front": "How do you tell which direction a hyperbola opens?", "back": "It opens in the direction of whichever squared term is positive.\n\n(x−h)²/a² − (y−k)²/b² = 1 opens left-right.\n(y−k)²/a² − (x−h)²/b² = 1 opens up-down."}, {"id": "tr-1", "category": "Trigonometry", "front": "What do SOH-CAH-TOA stand for?", "back": "SOH: sin θ = Opposite / Hypotenuse\nCAH: cos θ = Adjacent / Hypotenuse\nTOA: tan θ = Opposite / Adjacent"}, {"id": "tr-2", "category": "Trigonometry", "front": "What's the relationship between tan, sin, and cos?", "back": "tan θ = sin θ / cos θ"}, {"id": "tr-3", "category": "Trigonometry", "front": "What's the Pythagorean trig identity?", "back": "sin²θ + cos²θ = 1\n\nUse it to find cos from sin (or vice versa) without ever drawing a triangle."}, {"id": "tr-4", "category": "Trigonometry", "front": "How do you convert degrees to radians? Radians to degrees?", "back": "Degrees → radians: multiply by π/180\nRadians → degrees: multiply by 180/π\n\nTrick: π radians always equals 180° — build any conversion from that one fact."}, {"id": "tr-5", "category": "Trigonometry", "front": "What's the Law of Sines?", "back": "a/sin A = b/sin B = c/sin C\n\nUse it when you know an angle-side pair plus one more piece of information."}, {"id": "tr-6", "category": "Trigonometry", "front": "What's the Law of Cosines?", "back": "c² = a² + b² − 2ab·cos C\n\nUse it when you know two sides and the included angle (or all three sides)."}, {"id": "tr-7", "category": "Trigonometry", "front": "For y = A sin(Bx) + D, what do A, B, and D each control?", "back": "A → amplitude = |A|\nB → period = 2π/B\nD → midline (vertical shift): y = D"}, {"id": "tr-8", "category": "Trigonometry", "front": "How do you find an angle when you know a ratio of sides?", "back": "Use the matching inverse trig function: if sin θ = x, then θ = sin⁻¹(x). Same pattern for cos⁻¹ and tan⁻¹."}, {"id": "al-1", "category": "Algebraic Equations, Inequalities & Expressions", "front": "What's the one rule you must remember when solving inequalities?", "back": "Flip the inequality sign whenever you multiply or divide both sides by a NEGATIVE number."}, {"id": "al-2", "category": "Algebraic Equations, Inequalities & Expressions", "front": "How does |expression| = a split into two equations?", "back": "expression = a  OR  expression = −a"}, {"id": "al-3", "category": "Algebraic Equations, Inequalities & Expressions", "front": "What's the quadratic formula?", "back": "x = [−b ± √(b²−4ac)] / 2a\n\nUse it when a quadratic doesn't factor nicely."}, {"id": "al-4", "category": "Algebraic Equations, Inequalities & Expressions", "front": "What are the expansion patterns for (a+b)² and (a−b)²?", "back": "(a+b)² = a² + 2ab + b²\n(a−b)² = a² − 2ab + b²"}, {"id": "al-5", "category": "Algebraic Equations, Inequalities & Expressions", "front": "If a polynomial is written as p(x) = (x−a)(x−b), what are its zeros?", "back": "x = a and x = b — set each factor equal to 0 and solve."}, {"id": "al-6", "category": "Algebraic Equations, Inequalities & Expressions", "front": "What's the trick for solving a system of equations by elimination?", "back": "Add or subtract the two equations (after matching coefficients on one variable) so that variable cancels out."}, {"id": "al-7", "category": "Algebraic Equations, Inequalities & Expressions", "front": "What does it mean when two linear equations have the same slope but different y-intercepts?", "back": "The system has NO solution — the lines are parallel and never intersect."}, {"id": "al-8", "category": "Algebraic Equations, Inequalities & Expressions", "front": "How do you simplify a rational expression?", "back": "Factor the numerator and denominator completely, then cancel any common factors."}, {"id": "fn-1", "category": "Functions", "front": "What does f(a) mean?", "back": "Substitute a for every x in the function's rule."}, {"id": "fn-2", "category": "Functions", "front": "How do you evaluate f(g(x))? Which order?", "back": "Work from the inside out: evaluate g(x) first, then plug THAT result into f.\n\nf(g(x)) ≠ g(f(x)) in general — order matters."}, {"id": "fn-3", "category": "Functions", "front": "What does adding/subtracting OUTSIDE a function do to its graph? INSIDE?", "back": "Outside — y = f(x)+k: shifts vertically (up if k>0, down if k<0).\n\nInside — y = f(x−h): shifts horizontally, and backwards from what you'd expect — h>0 shifts the graph RIGHT."}, {"id": "fn-4", "category": "Functions", "front": "What does a negative sign in FRONT of f(x) do to the graph? A negative sign INSIDE the parentheses?", "back": "y = −f(x): flips vertically (over the x-axis).\ny = f(−x): flips horizontally (over the y-axis)."}, {"id": "fn-5", "category": "Functions", "front": "What two things do you check for domain restrictions?", "back": "1) Denominators can't equal 0.\n2) Expressions under a square root must be ≥ 0."}, {"id": "fn-6", "category": "Functions", "front": "How do you find the inverse of a function algebraically?", "back": "Replace f(x) with y, swap x and y, then solve for the new y. That result is f⁻¹(x)."}, {"id": "fn-7", "category": "Functions", "front": "If a graph passes through the point (a,b), what does that tell you?", "back": "f(a) = b — directly, no algebra needed."}, {"id": "fn-8", "category": "Functions", "front": "What are the x-intercepts of a graph, in function terms?", "back": "The zeros of the function — the x-values where f(x) = 0."}, {"id": "fn-9", "category": "Functions", "front": "How do you evaluate a piecewise function?", "back": "First figure out which condition your input satisfies — only then do you know which rule (piece) to use. For composition, re-check the piece at every step."}, {"id": "st-1", "category": "Statistics", "front": "What's the formula for mean?", "back": "Mean = (sum of all values) / (number of values)"}, {"id": "st-2", "category": "Statistics", "front": "How do you find the median?", "back": "Sort the data. If odd count, take the middle value. If even count, average the two middle values."}, {"id": "st-3", "category": "Statistics", "front": "What's the trick for finding a new mean after adding or removing a value?", "back": "Work with the SUM, not the mean directly: adjust the sum first (add or subtract the value), then divide by the new count."}, {"id": "st-4", "category": "Statistics", "front": "What's the formula for a weighted average?", "back": "Multiply each value by its weight (as a decimal), then add the results. The weights must add up to 1 (100%)."}, {"id": "st-5", "category": "Statistics", "front": "How do you find a missing value if you know the mean?", "back": "Total sum = mean × count. Missing value = total sum − sum of the known values."}, {"id": "st-6", "category": "Statistics", "front": "What does range measure, and how do you find it?", "back": "The spread of the data: range = max − min."}, {"id": "st-7", "category": "Statistics", "front": "Which has a bigger standard deviation: values clustered near the mean, or values spread far from it?", "back": "Spread far from the mean = bigger standard deviation. Clustered close to the mean = smaller standard deviation."}, {"id": "pc-1", "category": "Probability & Counting", "front": "What's the basic probability formula?", "back": "P(event) = (favorable outcomes) / (total outcomes)"}, {"id": "pc-2", "category": "Probability & Counting", "front": "What's the complement rule?", "back": "P(not A) = 1 − P(A)"}, {"id": "pc-3", "category": "Probability & Counting", "front": "How do you find P(A and B) for INDEPENDENT events?", "back": "Multiply: P(A and B) = P(A) × P(B)"}, {"id": "pc-4", "category": "Probability & Counting", "front": "How is probability different for events WITHOUT replacement (dependent events)?", "back": "The second probability changes based on the first outcome — adjust both the favorable count and the total after each draw."}, {"id": "pc-5", "category": "Probability & Counting", "front": "What's the Fundamental Counting Principle?", "back": "If you're making a sequence of independent choices, MULTIPLY the number of options at each step."}, {"id": "pc-6", "category": "Probability & Counting", "front": "What's a permutation, and when do you use it?", "back": "An arrangement where ORDER MATTERS (like 1st/2nd/3rd place).\n\nnPr = n! / (n−r)!"}, {"id": "pc-7", "category": "Probability & Counting", "front": "What's a combination, and when do you use it?", "back": "A group where order does NOT matter (like a committee).\n\nnCr = n! / [r!(n−r)!] — always smaller than the matching permutation."}, {"id": "pc-8", "category": "Probability & Counting", "front": "What does n! (n factorial) mean?", "back": "The product of all positive integers up to and including n: n × (n−1) × (n−2) × ... × 1."}, {"id": "er-1", "category": "Exponents, Radicals & Logarithms", "front": "What are the three basic exponent rules (product, quotient, power)?", "back": "xᵃ × xᵇ = xᵃ⁺ᵇ\nxᵃ / xᵇ = xᵃ⁻ᵇ\n(xᵃ)ᵇ = xᵃᵇ"}, {"id": "er-2", "category": "Exponents, Radicals & Logarithms", "front": "What does a negative exponent mean?", "back": "x⁻ⁿ = 1/xⁿ — flip it to the other side of the fraction and make the exponent positive."}, {"id": "er-3", "category": "Exponents, Radicals & Logarithms", "front": "What does anything (except 0) to the power of 0 equal?", "back": "1."}, {"id": "er-4", "category": "Exponents, Radicals & Logarithms", "front": "How do you interpret a fractional (rational) exponent?", "back": "x^(m/n) = ⁿ√(xᵐ)\n\nThe denominator becomes the root, the numerator stays as the power."}, {"id": "er-5", "category": "Exponents, Radicals & Logarithms", "front": "How do you simplify a radical like √50?", "back": "Pull out perfect-square factors: √50 = √(25×2) = 5√2."}, {"id": "er-6", "category": "Exponents, Radicals & Logarithms", "front": "When can you add or subtract radicals?", "back": "Only when the number under the root is the same (like radicals) — just like combining like terms."}, {"id": "er-7", "category": "Exponents, Radicals & Logarithms", "front": "What does log_b(x) = y actually mean?", "back": "It's the same statement as bʸ = x — \"what exponent do I need on b to get x?\""}, {"id": "er-8", "category": "Exponents, Radicals & Logarithms", "front": "What are the log addition and subtraction rules?", "back": "log_b(x) + log_b(y) = log_b(xy)\nlog_b(x) − log_b(y) = log_b(x/y)"}, {"id": "er-9", "category": "Exponents, Radicals & Logarithms", "front": "How do you solve an equation like log₅(x) = 3?", "back": "Rewrite in exponential form: 5³ = x, so x = 125."}, {"id": "nt-1", "category": "Number Theory & Number Sense", "front": "What's the difference between GCF and LCM?", "back": "GCF: the LARGEST number that divides evenly into both numbers.\nLCM: the SMALLEST number that both numbers divide into evenly."}, {"id": "nt-2", "category": "Number Theory & Number Sense", "front": "What are the even/odd rules for addition and multiplication?", "back": "even+even=even, odd+odd=even, even+odd=odd\neven×anything=even, odd×odd=odd"}, {"id": "nt-3", "category": "Number Theory & Number Sense", "front": "What's the trick for finding units-digit patterns for powers?", "back": "Units digits repeat in a cycle. Find the cycle length, then use the remainder when the exponent is divided by that length to find your place in it."}, {"id": "nt-4", "category": "Number Theory & Number Sense", "front": "When is √n rational?", "back": "Only when n is a perfect square. Otherwise √n is irrational."}, {"id": "nt-5", "category": "Number Theory & Number Sense", "front": "What's the trick for prime factorization?", "back": "Keep dividing by the smallest prime that fits until only primes remain."}, {"id": "nt-6", "category": "Number Theory & Number Sense", "front": "What does |a − b| represent?", "back": "The distance between a and b on the number line — always non-negative."}, {"id": "sq-1", "category": "Sequences & Series", "front": "What's the formula for the nth term of an arithmetic sequence?", "back": "aₙ = a₁ + (n−1)d\n\nd = common difference."}, {"id": "sq-2", "category": "Sequences & Series", "front": "What's the sum formula for an arithmetic series?", "back": "Sₙ = (n/2)(a₁ + aₙ)\n\nAverage the first and last term, then multiply by the number of terms."}, {"id": "sq-3", "category": "Sequences & Series", "front": "What's the formula for the nth term of a geometric sequence?", "back": "aₙ = a₁ × r^(n−1)\n\nr = common ratio."}, {"id": "sq-4", "category": "Sequences & Series", "front": "How do you find the common difference (or ratio) if you're only given two non-consecutive terms?", "back": "For an arithmetic sequence: divide the value-gap by the number of steps between the terms.\n\nFor a geometric sequence: take the appropriate root of the ratio between the terms."}, {"id": "sq-5", "category": "Sequences & Series", "front": "What do you need to build a recursive sequence?", "back": "A starting value AND a rule connecting each term to the one(s) before it — build the sequence one term at a time."}, {"id": "mx-1", "category": "Matrices", "front": "How do you add or subtract two matrices?", "back": "Combine the entries in matching positions. The matrices must have the SAME dimensions."}, {"id": "mx-2", "category": "Matrices", "front": "How do you multiply a matrix by a scalar?", "back": "Multiply EVERY entry by that number."}, {"id": "mx-3", "category": "Matrices", "front": "How do you multiply two matrices together?", "back": "Each entry in the result = (a row of the first matrix) · (a column of the second matrix), multiplied pairwise and added.\n\nOrder matters — matrix multiplication is NOT commutative."}, {"id": "mx-4", "category": "Matrices", "front": "What's the determinant of a 2×2 matrix [[a,b],[c,d]]?", "back": "ad − bc"}, {"id": "mx-5", "category": "Matrices", "front": "What are a matrix's \"dimensions\"?", "back": "Rows × columns. A matrix with 2 rows and 3 columns is a 2×3 matrix."}, {"id": "cx-1", "category": "Complex Numbers", "front": "What is i, and what is i²?", "back": "i = √(−1), so i² = −1.\n\nThis single fact drives every complex-number operation."}, {"id": "cx-2", "category": "Complex Numbers", "front": "What's the repeating cycle of powers of i?", "back": "i¹=i, i²=−1, i³=−i, i⁴=1 — then it repeats every 4 powers."}, {"id": "cx-3", "category": "Complex Numbers", "front": "How do you add or subtract complex numbers?", "back": "Combine the real parts together and the imaginary parts together — just like combining like terms."}, {"id": "cx-4", "category": "Complex Numbers", "front": "How do you multiply complex numbers?", "back": "FOIL them like binomials, then simplify using i² = −1."}, {"id": "cx-5", "category": "Complex Numbers", "front": "What's the conjugate of (a+bi), and what's special about multiplying by it?", "back": "Conjugate = (a−bi).\n\nMultiplying a complex number by its conjugate ALWAYS gives a real number: (a+bi)(a−bi) = a² + b²."}, {"id": "cx-6", "category": "Complex Numbers", "front": "How do you simplify √(−n) for positive n?", "back": "√(−n) = i√n"}];
+const CATEGORIES = ["Plane Geometry", "Coordinate Geometry", "Trigonometry", "Algebraic Equations, Inequalities & Expressions", "Functions", "Statistics", "Probability & Counting", "Exponents, Radicals & Logarithms", "Number Theory & Number Sense", "Sequences & Series", "Matrices", "Complex Numbers"];
+
+let deck = [];
+let idx = 0;
+let flipped = false;
+
+function $(id) { return document.getElementById(id); }
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, ch => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[ch]);
+}
+
+// Card backs that are tab-separated rows (one header row + data rows) render
+// as a real HTML table instead of raw whitespace, since tabs don't line up
+// into columns reliably with a proportional font. Plain-text backs (the vast
+// majority of cards) still render as plain wrapped text via textContent.
+function isTableBack(text) {
+  return typeof text === 'string' && text.includes('\t');
+}
+
+function renderBack(text) {
+  const backEl = $('backText');
+  if (!isTableBack(text)) {
+    backEl.innerHTML = '';
+    backEl.textContent = text;
+    return;
+  }
+  const rows = text.split('\n').filter(r => r.length > 0).map(r => r.split('\t'));
+  const [headerRow, ...dataRows] = rows;
+  let html = '<table><thead><tr>';
+  headerRow.forEach(cell => { html += `<th>${escapeHtml(cell.trim())}</th>`; });
+  html += '</tr></thead><tbody>';
+  dataRows.forEach(row => {
+    html += '<tr>';
+    row.forEach(cell => { html += `<td>${escapeHtml(cell.trim())}</td>`; });
+    html += '</tr>';
+  });
+  html += '</tbody></table>';
+  backEl.innerHTML = html;
+}
+
+function renderCheckboxes() {
+  const list = $('checkboxList');
+  list.innerHTML = '';
+  CATEGORIES.forEach(cat => {
+    const count = ALL_CARDS.filter(c => c.category === cat).length;
+    const label = document.createElement('label');
+    label.className = 'chk';
+    label.innerHTML = `<input type="checkbox" value="${cat}" checked> <span>${cat}</span> <span class="cnt">${count} cards</span>`;
+    list.appendChild(label);
+  });
+}
+
+function getSelectedCategories() {
+  return Array.from(document.querySelectorAll('#checkboxList input:checked')).map(el => el.value);
+}
+
+function shuffleArray(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function startStudying() {
+  const selected = getSelectedCategories();
+  let pool = ALL_CARDS.filter(c => selected.includes(c.category));
+  if ($('shuffleChk').checked) pool = shuffleArray(pool);
+  deck = pool;
+  idx = 0;
+  flipped = false;
+  if (deck.length === 0) return;
+  $('setup').style.display = 'none';
+  $('done').style.display = 'none';
+  $('study').style.display = 'block';
+  renderCard();
+}
+
+function renderCard() {
+  const c = deck[idx];
+  $('flipCard').classList.remove('flipped');
+  flipped = false;
+  $('frontText').textContent = c.front;
+  renderBack(c.back);
+  $('catTag').textContent = c.category;
+  $('counter').textContent = `${idx + 1} / ${deck.length}`;
+  $('progressFill').style.width = `${((idx + 1) / deck.length) * 100}%`;
+  $('prevBtn').disabled = idx === 0;
+  $('nextBtn').textContent = idx === deck.length - 1 ? 'Finish' : 'Next →';
+}
+
+function goNext() {
+  if (idx < deck.length - 1) {
+    idx++;
+    renderCard();
+  } else {
+    $('study').style.display = 'none';
+    $('doneSummary').textContent = `You went through ${deck.length} card${deck.length === 1 ? '' : 's'}.`;
+    $('done').style.display = 'block';
+  }
+}
+
+function goPrev() {
+  if (idx > 0) {
+    idx--;
+    renderCard();
+  }
+}
+
+renderCheckboxes();
+
+$('selectAllBtn').addEventListener('click', () => {
+  document.querySelectorAll('#checkboxList input').forEach(el => el.checked = true);
+});
+$('selectNoneBtn').addEventListener('click', () => {
+  document.querySelectorAll('#checkboxList input').forEach(el => el.checked = false);
+});
+$('startBtn').addEventListener('click', startStudying);
+$('flipCard').addEventListener('click', () => {
+  flipped = !flipped;
+  $('flipCard').classList.toggle('flipped', flipped);
+});
+$('nextBtn').addEventListener('click', goNext);
+$('prevBtn').addEventListener('click', goPrev);
+$('backToSetup').addEventListener('click', () => {
+  $('study').style.display = 'none';
+  $('done').style.display = 'none';
+  $('setup').style.display = 'block';
+});
+$('restartBtn').addEventListener('click', () => {
+  $('done').style.display = 'none';
+  $('setup').style.display = 'block';
+});
+</script>
+</body>
+</html>
