@@ -5544,299 +5544,215 @@
   "trick": "Double-check the boundary condition carefully — here x=2 uses the FIRST piece since its inequality is ≤, not the second."
  },
  {
-  "id": "ER-EX-1",
+  "id": "ER2-EX-1",
   "concept": "Exponents, Radicals & Logarithms",
   "subtype": "Exponent Rules",
-  "passage": "Simplify the expression x⁵ · x³.",
-  "question": "Which of the following is equivalent?",
+  "passage": "A city's water usage is modeled using scientific notation: (3.2×10⁵ gallons/day) × (2×10⁻² days) gives the usage over a short period.",
+  "question": "What is the product, in gallons?",
   "choices": [
    {
     "letter": "A",
-    "text": "x⁸"
+    "text": "64,000"
    },
    {
     "letter": "B",
-    "text": "x¹⁵"
+    "text": "640,000"
    },
    {
     "letter": "C",
-    "text": "2x⁸"
+    "text": "6,400"
    },
    {
     "letter": "D",
-    "text": "x²"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "When multiplying powers with the same base, add the exponents: x⁵ · x³ = x^(5+3) = x⁸.",
-  "trick": "Multiplying same-base powers: ADD exponents. Never multiply them."
- },
- {
-  "id": "ER-EX-2",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Exponent Rules",
-  "passage": "Simplify the expression y⁹ / y⁴.",
-  "question": "Which of the following is equivalent?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "y⁵"
-   },
-   {
-    "letter": "B",
-    "text": "y¹³"
-   },
-   {
-    "letter": "C",
-    "text": "y^(2.25)"
-   },
-   {
-    "letter": "D",
-    "text": "y³⁶"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "When dividing powers with the same base, subtract the exponents: y⁹/y⁴ = y^(9−4) = y⁵.",
-  "trick": "Dividing same-base powers: SUBTRACT exponents (top minus bottom)."
- },
- {
-  "id": "ER-EX-3",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Exponent Rules",
-  "passage": "Simplify the expression (a⁴)⁶.",
-  "question": "Which of the following is equivalent?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "a¹⁰"
-   },
-   {
-    "letter": "B",
-    "text": "a²⁴"
-   },
-   {
-    "letter": "C",
-    "text": "a⁴⁶"
-   },
-   {
-    "letter": "D",
-    "text": "6a⁴"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "When raising a power to a power, multiply the exponents: (a⁴)⁶ = a^(4·6) = a²⁴.",
-  "trick": "Power to a power: MULTIPLY exponents. This is different from the multiply-same-base rule, which adds."
- },
- {
-  "id": "ER-EX-4",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Exponent Rules",
-  "passage": "Simplify the expression (3x²y)³.",
-  "question": "Which of the following is equivalent?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "9x⁶y³"
-   },
-   {
-    "letter": "B",
-    "text": "27x⁶y³"
-   },
-   {
-    "letter": "C",
-    "text": "27x⁵y³"
-   },
-   {
-    "letter": "D",
-    "text": "9x⁵y"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "Apply the exponent to every factor: 3³ = 27, (x²)³ = x⁶, y³ stays y³. Result: 27x⁶y³.",
-  "trick": "When a product is raised to a power, EVERY factor inside gets that exponent — including any numerical coefficient."
- },
- {
-  "id": "ER-EX-5",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Exponent Rules",
-  "passage": "Evaluate the expression 5⁰ + 2⁰ + 7⁰.",
-  "question": "What is the value of this expression?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "0"
-   },
-   {
-    "letter": "B",
-    "text": "1"
-   },
-   {
-    "letter": "C",
-    "text": "3"
-   },
-   {
-    "letter": "D",
-    "text": "14"
+    "text": "640"
    }
   ],
   "correctLetter": "C",
-  "explanation": "Any nonzero number raised to the power 0 equals 1. So 5⁰+2⁰+7⁰ = 1+1+1 = 3.",
-  "trick": "Anything (except 0) to the power 0 is always exactly 1 — regardless of how large or small the base is."
+  "explanation": "Multiply the coefficients (3.2×2=6.4) and add the exponents (5+(−2)=3): 6.4×10³ = 6,400.",
+  "trick": "Multiply the decimal parts and ADD the exponents separately — don't multiply the exponents."
  },
  {
-  "id": "ER-EX-6",
+  "id": "ER2-EX-2",
   "concept": "Exponents, Radicals & Logarithms",
   "subtype": "Exponent Rules",
-  "passage": "Simplify the expression x⁻⁴.",
-  "question": "Which of the following is equivalent, for x ≠ 0?",
+  "passage": "A company's total revenue, (4.8×10⁷ dollars), is divided evenly among (1.2×10³) shareholders.",
+  "question": "How many dollars, in standard form, does each shareholder receive?",
   "choices": [
    {
     "letter": "A",
-    "text": "−x⁴"
+    "text": "4,000"
    },
    {
     "letter": "B",
-    "text": "1/x⁴"
+    "text": "4,000,000"
    },
    {
     "letter": "C",
-    "text": "−1/x⁴"
+    "text": "400,000"
    },
    {
     "letter": "D",
-    "text": "1/x⁻⁴"
+    "text": "40,000"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "Divide the coefficients (4.8/1.2=4) and subtract the exponents (7−3=4): 4×10⁴ = 40,000.",
+  "trick": "For division in scientific notation, divide the coefficients and SUBTRACT the exponents."
+ },
+ {
+  "id": "ER2-EX-3",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Exponent Rules",
+  "passage": "A survey recorded that 2.4×10⁶ people watched a particular broadcast.",
+  "question": "If 15% of those viewers also watched the follow-up broadcast, how many people is that?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "36,000"
+   },
+   {
+    "letter": "B",
+    "text": "360,000"
+   },
+   {
+    "letter": "C",
+    "text": "3,600,000"
+   },
+   {
+    "letter": "D",
+    "text": "36,000,000"
    }
   ],
   "correctLetter": "B",
-  "explanation": "A negative exponent means take the reciprocal and make the exponent positive: x⁻⁴ = 1/x⁴.",
-  "trick": "Negative exponent: flip to the other side of the fraction and drop the negative sign — it does NOT make the value negative."
+  "explanation": "Convert 15% to 0.15 and multiply: 0.15 × 2.4×10⁶ = 0.36×10⁶ = 360,000.",
+  "trick": "Convert the percent to a decimal first, then multiply straight through — no need to convert out of scientific notation."
  },
  {
-  "id": "ER-RT-1",
+  "id": "ER2-EX-4",
   "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Rational (Fractional) Exponents",
-  "passage": "Evaluate the expression 8^(1/3).",
-  "question": "What is the value of this expression?",
+  "subtype": "Exponent Rules",
+  "passage": "For all nonzero values of x and y, consider the expression (2x³y⁻²)³.",
+  "question": "Which of the following is equivalent to this expression?",
   "choices": [
    {
     "letter": "A",
-    "text": "8/3"
+    "text": "6x⁶y⁻⁵"
    },
    {
     "letter": "B",
-    "text": "2"
+    "text": "8x⁶y⁻⁵"
    },
    {
     "letter": "C",
-    "text": "8"
+    "text": "8x⁹y⁻⁶"
    },
    {
     "letter": "D",
-    "text": "24"
+    "text": "6x⁹y⁻⁶"
    }
   ],
-  "correctLetter": "B",
-  "explanation": "A 1/3 exponent means take the cube root: 8^(1/3) = ∛8 = 2.",
-  "trick": "A fractional exponent 1/n means \"take the nth root\" — the denominator of the fraction tells you which root."
+  "correctLetter": "C",
+  "explanation": "Apply the outer exponent to every factor: 2³=8, (x³)³=x⁹, (y⁻²)³=y⁻⁶. Result: 8x⁹y⁻⁶.",
+  "trick": "When a whole product is raised to a power, every factor — including the numeric coefficient — gets that exponent."
  },
  {
-  "id": "ER-RT-2",
+  "id": "ER2-EX-5",
   "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Rational (Fractional) Exponents",
-  "passage": "Evaluate the expression 16^(3/4).",
-  "question": "What is the value of this expression?",
+  "subtype": "Exponent Rules",
+  "passage": "For all nonzero values of a and b, consider the expression (a²b⁻³)(a⁻⁵b⁴).",
+  "question": "Which of the following is equivalent to this expression?",
   "choices": [
    {
     "letter": "A",
-    "text": "8"
+    "text": "a⁻⁷b⁷"
    },
    {
     "letter": "B",
-    "text": "12"
+    "text": "a⁷b⁻⁷"
    },
    {
     "letter": "C",
-    "text": "48"
+    "text": "a³b⁻¹"
    },
    {
     "letter": "D",
-    "text": "64"
+    "text": "a⁻³b"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "Add the exponents of matching bases: a-exponents: 2+(−5)=−3. b-exponents: −3+4=1. Result: a⁻³b¹.",
+  "trick": "When multiplying same-base powers, add exponents — track each variable's exponent completely separately."
+ },
+ {
+  "id": "ER2-EX-6",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Exponent Rules",
+  "passage": "A bacteria population doubles every hour according to the model P(t)=500·2^t, where t is hours elapsed.",
+  "question": "What is the population after 6 hours?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "32,000"
+   },
+   {
+    "letter": "B",
+    "text": "16,000"
+   },
+   {
+    "letter": "C",
+    "text": "3,000"
+   },
+   {
+    "letter": "D",
+    "text": "64,000"
    }
   ],
   "correctLetter": "A",
-  "explanation": "16^(3/4) = (16^(1/4))³ = (∜16)³ = 2³ = 8.",
-  "trick": "For x^(m/n), take the nth root FIRST (usually gives a smaller, easier number), then raise to the mth power."
+  "explanation": "Substitute t=6: P(6) = 500·2⁶ = 500·64 = 32,000.",
+  "trick": "Evaluate the exponential part completely first (2⁶=64), then multiply by the starting coefficient."
  },
  {
-  "id": "ER-RT-3",
+  "id": "ER2-EX-7",
   "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Rational (Fractional) Exponents",
-  "passage": "Simplify the expression x^(2/3) · x^(1/3).",
-  "question": "Which of the following is equivalent?",
+  "subtype": "Exponent Rules",
+  "passage": "For all nonzero values of x, consider the expression (5x⁻²)(4x⁵)/(2x).",
+  "question": "Which of the following is equivalent to this expression?",
   "choices": [
    {
     "letter": "A",
-    "text": "x"
+    "text": "20x⁻⁸"
    },
    {
     "letter": "B",
-    "text": "x^(2/9)"
+    "text": "20x²"
    },
    {
     "letter": "C",
-    "text": "x^(1/3)"
+    "text": "10x²"
    },
    {
     "letter": "D",
-    "text": "x²"
+    "text": "10x⁶"
    }
   ],
-  "correctLetter": "A",
-  "explanation": "Add the exponents (same base): 2/3 + 1/3 = 3/3 = 1. Result: x¹ = x.",
-  "trick": "Fractional exponents follow the same addition rule as whole-number exponents when multiplying — just add the fractions."
+  "correctLetter": "C",
+  "explanation": "Multiply the coefficients: (5·4)/2=10. Combine exponents: −2+5−1=2. Result: 10x².",
+  "trick": "Handle the numeric coefficients and the variable's exponents as two completely separate calculations."
  },
  {
-  "id": "ER-RT-4",
+  "id": "ER2-RT-1",
   "concept": "Exponents, Radicals & Logarithms",
   "subtype": "Rational (Fractional) Exponents",
-  "passage": "Which of the following is equivalent to ⁵√(x³)?",
-  "question": "Select the equivalent expression.",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "x^(5/3)"
-   },
-   {
-    "letter": "B",
-    "text": "x^(3/5)"
-   },
-   {
-    "letter": "C",
-    "text": "3x^(1/5)"
-   },
-   {
-    "letter": "D",
-    "text": "x^15"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "A radical ⁿ√(x^m) converts to the fractional exponent x^(m/n) — the root becomes the denominator, the power stays as the numerator.",
-  "trick": "To convert a radical to a fractional exponent: root → denominator, power → numerator."
- },
- {
-  "id": "ER-RT-5",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Rational (Fractional) Exponents",
-  "passage": "Evaluate the expression 27^(−2/3).",
+  "passage": "Consider the expression 27^(2/3).",
   "question": "What is the value of this expression?",
   "choices": [
    {
     "letter": "A",
-    "text": "−9"
+    "text": "6"
    },
    {
     "letter": "B",
-    "text": "1/9"
+    "text": "729"
    },
    {
     "letter": "C",
@@ -5844,102 +5760,130 @@
    },
    {
     "letter": "D",
-    "text": "−1/9"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "First handle the negative exponent (reciprocal): 27^(−2/3) = 1/27^(2/3). Then 27^(2/3) = (∛27)² = 3² = 9. Result: 1/9.",
-  "trick": "Handle the negative sign (flip to reciprocal) and the fraction (root then power) as two separate, sequential steps."
- },
- {
-  "id": "ER-RT-6",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Rational (Fractional) Exponents",
-  "passage": "Simplify the expression (x^(1/2))⁶.",
-  "question": "Which of the following is equivalent?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "x³"
-   },
-   {
-    "letter": "B",
-    "text": "x⁶"
-   },
-   {
-    "letter": "C",
-    "text": "x^(1/12)"
-   },
-   {
-    "letter": "D",
-    "text": "6x^(1/2)"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "Power to a power: multiply the exponents: (1/2)·6 = 3. Result: x³.",
-  "trick": "Multiplying a fractional exponent by a whole number often produces a clean whole-number result — look for exponents that cancel nicely."
- },
- {
-  "id": "ER-SR-1",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Simplifying Radicals",
-  "passage": "Simplify the expression √72.",
-  "question": "Which of the following is equivalent?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "6√2"
-   },
-   {
-    "letter": "B",
-    "text": "8√3"
-   },
-   {
-    "letter": "C",
-    "text": "2√18"
-   },
-   {
-    "letter": "D",
-    "text": "36√2"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "Find the largest perfect-square factor of 72: 72 = 36×2. √72 = √36 · √2 = 6√2.",
-  "trick": "Look for the LARGEST perfect-square factor first — this avoids having to simplify again afterward."
- },
- {
-  "id": "ER-SR-2",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Simplifying Radicals",
-  "passage": "Simplify the expression √48 + √27.",
-  "question": "Which of the following is equivalent?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "√75"
-   },
-   {
-    "letter": "B",
-    "text": "5√3"
-   },
-   {
-    "letter": "C",
-    "text": "7√3"
-   },
-   {
-    "letter": "D",
-    "text": "9√6"
+    "text": "18"
    }
   ],
   "correctLetter": "C",
-  "explanation": "Simplify each radical first: √48 = √16·√3 = 4√3, and √27 = √9·√3 = 3√3. Add the like radicals: 4√3+3√3 = 7√3.",
-  "trick": "You can only add radicals once they have the SAME number underneath — simplify each one first, then combine."
+  "explanation": "Take the cube root first (27^(1/3)=3), then square it: 3²=9.",
+  "trick": "For x^(m/n), take the nth root first — it usually gives a small, manageable number before you apply the power."
  },
  {
-  "id": "ER-SR-3",
+  "id": "ER2-RT-2",
   "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Simplifying Radicals",
-  "passage": "Simplify the expression √20 · √5.",
+  "subtype": "Rational (Fractional) Exponents",
+  "passage": "Consider the expression 32^(3/5).",
+  "question": "What is the value of this expression?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "8"
+   },
+   {
+    "letter": "B",
+    "text": "6"
+   },
+   {
+    "letter": "C",
+    "text": "16"
+   },
+   {
+    "letter": "D",
+    "text": "96"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "Take the 5th root first (32^(1/5)=2), then cube it: 2³=8.",
+  "trick": "Recognize perfect powers under the radical (32=2⁵) — this makes the root come out clean."
+ },
+ {
+  "id": "ER2-RT-3",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Rational (Fractional) Exponents",
+  "passage": "Consider the expression 16^(1/4) · 16^(1/2).",
+  "question": "What is the value of this expression?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "32"
+   },
+   {
+    "letter": "B",
+    "text": "8"
+   },
+   {
+    "letter": "C",
+    "text": "4"
+   },
+   {
+    "letter": "D",
+    "text": "16"
+   }
+  ],
+  "correctLetter": "B",
+  "explanation": "Add the exponents (same base): 1/4+1/2=3/4. So the expression equals 16^(3/4) = (16^(1/4))³ = 2³ = 8.",
+  "trick": "Multiplying same-base fractional-exponent terms works exactly like whole-number exponents — just add the fractions."
+ },
+ {
+  "id": "ER2-RT-4",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Rational (Fractional) Exponents",
+  "passage": "For a positive real number x, x^(2/3) = 25.",
+  "question": "What is the value of x?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "390,625"
+   },
+   {
+    "letter": "B",
+    "text": "37.5"
+   },
+   {
+    "letter": "C",
+    "text": "125"
+   },
+   {
+    "letter": "D",
+    "text": "15,625"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Raise both sides to the reciprocal power, 3/2: x = 25^(3/2) = (25^(1/2))³ = 5³ = 125.",
+  "trick": "To undo a fractional exponent, raise both sides to its reciprocal power."
+ },
+ {
+  "id": "ER2-RT-5",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Rational (Fractional) Exponents",
+  "passage": "Consider the expression (8^(1/3))².",
+  "question": "What is the value of this expression?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "64"
+   },
+   {
+    "letter": "B",
+    "text": "4"
+   },
+   {
+    "letter": "C",
+    "text": "2"
+   },
+   {
+    "letter": "D",
+    "text": "16"
+   }
+  ],
+  "correctLetter": "B",
+  "explanation": "Take the cube root first (8^(1/3)=2), then square: 2²=4.",
+  "trick": "Order matters less than you'd think here — but taking the root first always keeps the numbers smaller and easier."
+ },
+ {
+  "id": "ER2-RT-6",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Rational (Fractional) Exponents",
+  "passage": "Consider the expression 1,000^(2/3).",
   "question": "What is the value of this expression?",
   "choices": [
    {
@@ -5948,63 +5892,231 @@
    },
    {
     "letter": "B",
-    "text": "√25"
+    "text": "1,000,000,000"
    },
    {
     "letter": "C",
-    "text": "5√4"
+    "text": "100"
    },
    {
     "letter": "D",
-    "text": "25"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "Multiply the radicands together first: √20 · √5 = √(20·5) = √100 = 10.",
-  "trick": "When multiplying two radicals, combine everything under one root first — the product often simplifies nicely."
- },
- {
-  "id": "ER-SR-4",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Simplifying Radicals",
-  "passage": "Simplify the expression 3√8 − √18.",
-  "question": "Which of the following is equivalent?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "2√2"
-   },
-   {
-    "letter": "B",
-    "text": "5√2"
-   },
-   {
-    "letter": "C",
-    "text": "3√2"
-   },
-   {
-    "letter": "D",
-    "text": "6√2"
+    "text": "1,000,000"
    }
   ],
   "correctLetter": "C",
-  "explanation": "Simplify each term: 3√8 = 3(2√2) = 6√2, and √18 = 3√2. Subtract: 6√2 − 3√2 = 3√2.",
-  "trick": "Simplify each radical to the same \"like radical\" form before combining with addition or subtraction."
+  "explanation": "Take the cube root first (1,000^(1/3)=10), then square: 10²=100.",
+  "trick": "Recognizing 1,000=10³ makes the cube root instant — look for perfect-cube bases before computing directly."
  },
  {
-  "id": "ER-SR-5",
+  "id": "ER2-RT-7",
   "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Simplifying Radicals",
-  "passage": "Rationalize the denominator of 5/√3.",
-  "question": "Which of the following is equivalent?",
+  "subtype": "Rational (Fractional) Exponents",
+  "passage": "A physics formula relates energy to frequency using E=k·f^(3/2), where k is a positive constant.",
+  "question": "If f is quadrupled (multiplied by 4), by what factor does E change?",
   "choices": [
    {
     "letter": "A",
-    "text": "5√3/3"
+    "text": "16"
    },
    {
     "letter": "B",
-    "text": "5/3"
+    "text": "8"
+   },
+   {
+    "letter": "C",
+    "text": "6"
+   },
+   {
+    "letter": "D",
+    "text": "4"
+   }
+  ],
+  "correctLetter": "B",
+  "explanation": "Since f is multiplied by 4, the new E is k·(4f)^(3/2) = k·4^(3/2)·f^(3/2). Since 4^(3/2)=(4^(1/2))³=2³=8, E is multiplied by 8.",
+  "trick": "When the input to a power function is scaled, the output scales by that same factor raised to the power."
+ },
+ {
+  "id": "ER2-SR-1",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Simplifying Radicals",
+  "passage": "Consider the expression √72 · √2.",
+  "question": "What is the value of this expression?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "144"
+   },
+   {
+    "letter": "B",
+    "text": "36"
+   },
+   {
+    "letter": "C",
+    "text": "12"
+   },
+   {
+    "letter": "D",
+    "text": "6"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Combine under one radical first: √(72·2) = √144 = 12.",
+  "trick": "When multiplying two square roots, combine everything under a single radical first — the product often simplifies perfectly."
+ },
+ {
+  "id": "ER2-SR-2",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Simplifying Radicals",
+  "passage": "Which of the following is equivalent to √180?",
+  "question": "Select the fully simplified radical form.",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "6√5"
+   },
+   {
+    "letter": "B",
+    "text": "9√2"
+   },
+   {
+    "letter": "C",
+    "text": "18√5"
+   },
+   {
+    "letter": "D",
+    "text": "6√30"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "Find the largest perfect-square factor: 180=36×5. √180 = √36·√5 = 6√5.",
+  "trick": "Always search for the LARGEST perfect-square factor first, to avoid having to simplify twice."
+ },
+ {
+  "id": "ER2-SR-3",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Simplifying Radicals",
+  "passage": "Consider the expression √50 + √8.",
+  "question": "Which of the following is equivalent to this expression?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "√58"
+   },
+   {
+    "letter": "B",
+    "text": "7√2"
+   },
+   {
+    "letter": "C",
+    "text": "9√2"
+   },
+   {
+    "letter": "D",
+    "text": "13√2"
+   }
+  ],
+  "correctLetter": "B",
+  "explanation": "Simplify each term: √50=5√2, √8=2√2. Add the like radicals: 5√2+2√2=7√2.",
+  "trick": "You can only combine radicals once they share the same number underneath — simplify each one first."
+ },
+ {
+  "id": "ER2-SR-4",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Simplifying Radicals",
+  "passage": "Consider the expression (3√2)(4√6).",
+  "question": "Which of the following is equivalent to this expression?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "12√12"
+   },
+   {
+    "letter": "B",
+    "text": "24√6"
+   },
+   {
+    "letter": "C",
+    "text": "24√3"
+   },
+   {
+    "letter": "D",
+    "text": "12√8"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Multiply the coefficients (3·4=12) and combine the radicals (√2·√6=√12=2√3): 12·2√3=24√3.",
+  "trick": "Multiply the outside coefficients together and the radicands together separately, then simplify what's left under the root."
+ },
+ {
+  "id": "ER2-SR-5",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Simplifying Radicals",
+  "passage": "For x>0, consider the expression √(48x⁵).",
+  "question": "Which of the following is equivalent to this expression?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "4x√(3x⁴)"
+   },
+   {
+    "letter": "B",
+    "text": "16x²√(3x)"
+   },
+   {
+    "letter": "C",
+    "text": "4x²√(3x)"
+   },
+   {
+    "letter": "D",
+    "text": "4x²√3"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Factor out perfect squares: 48x⁵ = 16x⁴·3x. So √(48x⁵) = √(16x⁴)·√(3x) = 4x²√(3x).",
+  "trick": "Split the radicand into (largest perfect square factor) × (leftover), handling the numeric and variable parts together."
+ },
+ {
+  "id": "ER2-SR-6",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Simplifying Radicals",
+  "passage": "Which of the following is equivalent to 6/√3, with a rationalized denominator?",
+  "question": "Select the correct simplified form.",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "6√3"
+   },
+   {
+    "letter": "B",
+    "text": "2√3"
+   },
+   {
+    "letter": "C",
+    "text": "3√3"
+   },
+   {
+    "letter": "D",
+    "text": "6√3/3"
+   }
+  ],
+  "correctLetter": "B",
+  "explanation": "Multiply top and bottom by √3: (6/√3)(√3/√3) = 6√3/3 = 2√3.",
+  "trick": "Rationalizing often simplifies further after clearing the radical — don't stop at the first fraction you get."
+ },
+ {
+  "id": "ER2-SR-7",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Simplifying Radicals",
+  "passage": "A square has an area of 75 square inches.",
+  "question": "What is the length, in inches, of one side of the square, in simplest radical form?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "15"
+   },
+   {
+    "letter": "B",
+    "text": "5√5"
    },
    {
     "letter": "C",
@@ -6012,18 +6124,18 @@
    },
    {
     "letter": "D",
-    "text": "√3/5"
+    "text": "25√3"
    }
   ],
-  "correctLetter": "A",
-  "explanation": "Multiply top and bottom by √3: (5/√3)·(√3/√3) = 5√3/3.",
-  "trick": "To rationalize, multiply by the radical over itself — this clears the radical from the denominator without changing the value."
+  "correctLetter": "C",
+  "explanation": "Side length = √75 = √(25·3) = 5√3.",
+  "trick": "Area-to-side-length problems for a square are just a square-root simplification in disguise."
  },
  {
-  "id": "ER-RE-1",
+  "id": "ER2-RE-1",
   "concept": "Exponents, Radicals & Logarithms",
   "subtype": "Radical Equations",
-  "passage": "Solve the equation √(x + 3) = 5.",
+  "passage": "Solve the equation √(2x+3) = 7 for x.",
   "question": "What is the value of x?",
   "choices": [
    {
@@ -6032,59 +6144,87 @@
    },
    {
     "letter": "B",
-    "text": "8"
+    "text": "17"
    },
    {
     "letter": "C",
-    "text": "22"
+    "text": "23"
    },
    {
     "letter": "D",
-    "text": "28"
+    "text": "46"
    }
   ],
   "correctLetter": "C",
-  "explanation": "Square both sides to eliminate the radical: x+3 = 25, so x = 22.",
-  "trick": "Squaring both sides is the standard first move for a radical equation — but always check your answer in the original equation afterward."
+  "explanation": "Square both sides: 2x+3=49. Solve: 2x=46, so x=23.",
+  "trick": "Squaring is always the first move for a single-radical equation, but check your answer in the original equation afterward."
  },
  {
-  "id": "ER-RE-2",
+  "id": "ER2-RE-2",
   "concept": "Exponents, Radicals & Logarithms",
   "subtype": "Radical Equations",
-  "passage": "Solve the equation √(2x − 1) = √(x + 4).",
+  "passage": "Solve the equation √(5x−1) − 2 = 3 for x.",
   "question": "What is the value of x?",
   "choices": [
    {
     "letter": "A",
-    "text": "3"
+    "text": "1.2"
    },
    {
     "letter": "B",
-    "text": "5"
+    "text": "3.6"
    },
    {
     "letter": "C",
-    "text": "7"
+    "text": "9.6"
    },
    {
     "letter": "D",
-    "text": "9"
+    "text": "5.2"
    }
   ],
-  "correctLetter": "B",
-  "explanation": "Since both sides are already square roots, square both sides directly: 2x−1 = x+4. Solve: x = 5.",
-  "trick": "When both sides are already radicals with the same root, squaring eliminates them both in one step."
+  "correctLetter": "D",
+  "explanation": "Isolate the radical first: √(5x−1) = 5. Square: 5x−1=25. Solve: 5x=26, so x=5.2.",
+  "trick": "Get the radical completely alone on one side BEFORE squaring — squaring too early creates a much messier equation."
  },
  {
-  "id": "ER-RE-3",
+  "id": "ER2-RE-3",
   "concept": "Exponents, Radicals & Logarithms",
   "subtype": "Radical Equations",
-  "passage": "Solve the equation √(3x + 7) − 4 = 1.",
+  "passage": "Solve the equation x = √(3x+18) for x.",
+  "question": "What is (are) the solution(s)?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "x = 6 only"
+   },
+   {
+    "letter": "B",
+    "text": "x = −3 only"
+   },
+   {
+    "letter": "C",
+    "text": "No solution"
+   },
+   {
+    "letter": "D",
+    "text": "x = 6 or x = −3"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "Square both sides: x²=3x+18, so x²−3x−18=0, which factors as (x−6)(x+3)=0, giving x=6 or x=−3. Since the original equation requires x=√(...) ≥ 0, x=−3 doesn't satisfy the original equation, leaving only x=6.",
+  "trick": "After squaring and solving, always check each solution against the ORIGINAL equation — squaring can introduce fake (extraneous) solutions."
+ },
+ {
+  "id": "ER2-RE-4",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Radical Equations",
+  "passage": "Solve the equation √(x+7) = √(2x−3) for x.",
   "question": "What is the value of x?",
   "choices": [
    {
     "letter": "A",
-    "text": "6"
+    "text": "13"
    },
    {
     "letter": "B",
@@ -6093,554 +6233,190 @@
    {
     "letter": "C",
     "text": "10"
-   },
-   {
-    "letter": "D",
-    "text": "12"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "Isolate the radical first: √(3x+7) = 5. Square both sides: 3x+7 = 25. Solve: 3x=18, so x=6.",
-  "trick": "Isolate the radical on one side BEFORE squaring — squaring an equation with extra terms outside the radical creates a mess."
- },
- {
-  "id": "ER-RE-4",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Radical Equations",
-  "passage": "Solve the equation x = √(5x − 6).",
-  "question": "What is (are) the solution(s)?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "x = 2 and x = 3"
-   },
-   {
-    "letter": "B",
-    "text": "x = 2 only"
-   },
-   {
-    "letter": "C",
-    "text": "x = 3 only"
-   },
-   {
-    "letter": "D",
-    "text": "No solution"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "Square both sides: x² = 5x−6, so x²−5x+6=0, which factors as (x−2)(x−3)=0, giving x=2 or x=3. Both check out in the original equation since x must be non-negative and both values work.",
-  "trick": "After squaring and solving, always verify each solution in the ORIGINAL equation — squaring can introduce extraneous (fake) solutions."
- },
- {
-  "id": "ER-RE-5",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Radical Equations",
-  "passage": "Solve the equation √(x − 2) = −3.",
-  "question": "What is (are) the solution(s)?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "x = 11"
-   },
-   {
-    "letter": "B",
-    "text": "x = 7"
-   },
-   {
-    "letter": "C",
-    "text": "x = −7"
-   },
-   {
-    "letter": "D",
-    "text": "No solution"
-   }
-  ],
-  "correctLetter": "D",
-  "explanation": "A square root symbol always represents the non-negative root, so √(x−2) can never equal a negative number like −3. There is no solution.",
-  "trick": "A square root can NEVER output a negative value — if a radical equation sets a root equal to a negative number, it has no solution before you even start solving."
- },
- {
-  "id": "ER-LB-1",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Logarithm Basics & Notation",
-  "passage": "Rewrite the equation 3⁴ = 81 in logarithmic form.",
-  "question": "Which of the following is equivalent?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "log₃(81) = 4"
-   },
-   {
-    "letter": "B",
-    "text": "log₄(81) = 3"
-   },
-   {
-    "letter": "C",
-    "text": "log₈₁(3) = 4"
-   },
-   {
-    "letter": "D",
-    "text": "log₃(4) = 81"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "The exponential equation bʸ = x converts to logₐ(x) = y. Here, 3⁴=81 becomes log₃(81)=4.",
-  "trick": "The base of the exponent becomes the base (subscript) of the log — everything else follows the pattern bʸ=x ⟷ log_b(x)=y."
- },
- {
-  "id": "ER-LB-2",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Logarithm Basics & Notation",
-  "passage": "Rewrite the equation log₅(125) = 3 in exponential form.",
-  "question": "Which of the following is equivalent?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "5³ = 125"
-   },
-   {
-    "letter": "B",
-    "text": "3⁵ = 125"
-   },
-   {
-    "letter": "C",
-    "text": "125³ = 5"
-   },
-   {
-    "letter": "D",
-    "text": "5^(125) = 3"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "The logarithmic equation logₐ(x)=y converts to bʸ=x. Here, log₅(125)=3 becomes 5³=125.",
-  "trick": "Logarithms and exponents are two ways of writing the same relationship — practice converting fluently in both directions."
- },
- {
-  "id": "ER-LB-3",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Logarithm Basics & Notation",
-  "passage": "Evaluate log₂(32).",
-  "question": "What is the value of this expression?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "4"
-   },
-   {
-    "letter": "B",
-    "text": "5"
-   },
-   {
-    "letter": "C",
-    "text": "16"
-   },
-   {
-    "letter": "D",
-    "text": "64"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "Ask: \"2 to what power gives 32?\" Since 2⁵=32, log₂(32)=5.",
-  "trick": "Reframe every log as a question: \"base to what power equals the number inside?\" — the answer to that question IS the log's value."
- },
- {
-  "id": "ER-LB-4",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Logarithm Basics & Notation",
-  "passage": "Evaluate log₁₀(0.001).",
-  "question": "What is the value of this expression?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "−3"
-   },
-   {
-    "letter": "B",
-    "text": "−0.001"
-   },
-   {
-    "letter": "C",
-    "text": "3"
-   },
-   {
-    "letter": "D",
-    "text": "0.001"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "10 to what power gives 0.001? Since 10⁻³ = 1/1000 = 0.001, log₁₀(0.001) = −3.",
-  "trick": "Negative logs happen when the number inside is between 0 and 1 — don't assume logs are always positive."
- },
- {
-  "id": "ER-LB-5",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Logarithm Basics & Notation",
-  "passage": "Solve the equation log₄(x) = 3.",
-  "question": "What is the value of x?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "12"
-   },
-   {
-    "letter": "B",
-    "text": "1/64"
-   },
-   {
-    "letter": "C",
-    "text": "64"
-   },
-   {
-    "letter": "D",
-    "text": "81"
-   }
-  ],
-  "correctLetter": "C",
-  "explanation": "Rewrite in exponential form: 4³ = x, so x = 64.",
-  "trick": "To solve for x inside a log, rewrite the whole equation in exponential form first — this isolates x directly."
- },
- {
-  "id": "ER-LB-6",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Logarithm Basics & Notation",
-  "passage": "What is the value of x if logₓ(49) = 2?",
-  "question": "Select the value of x.",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "7"
-   },
-   {
-    "letter": "B",
-    "text": "24.5"
-   },
-   {
-    "letter": "C",
-    "text": "49"
-   },
-   {
-    "letter": "D",
-    "text": "98"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "Rewrite in exponential form: x² = 49, so x = 7 (the base of a logarithm must be positive).",
-  "trick": "When the BASE is the unknown, rewriting in exponential form still works — just solve for x as the base of a power instead."
- },
- {
-  "id": "ER-LR-1",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Logarithm Rules",
-  "passage": "Which of the following is equivalent to log₃(5) + log₃(4)?",
-  "question": "Select the equivalent expression.",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "log₃(9)"
-   },
-   {
-    "letter": "B",
-    "text": "log₃(20)"
-   },
-   {
-    "letter": "C",
-    "text": "log₃(1.25)"
-   },
-   {
-    "letter": "D",
-    "text": "2log₃(9)"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "The log addition rule combines two logs (same base) by multiplying the arguments: log₃(5)+log₃(4) = log₃(5·4) = log₃(20).",
-  "trick": "Adding logs with the same base = log of the PRODUCT. Subtracting logs = log of the QUOTIENT."
- },
- {
-  "id": "ER-LR-2",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Logarithm Rules",
-  "passage": "Which of the following is equivalent to log₂(24) − log₂(3)?",
-  "question": "Select the equivalent expression.",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "log₂(8)"
-   },
-   {
-    "letter": "B",
-    "text": "log₂(21)"
-   },
-   {
-    "letter": "C",
-    "text": "log₂(72)"
-   },
-   {
-    "letter": "D",
-    "text": "log₂(8) = 3"
-   }
-  ],
-  "correctLetter": "D",
-  "explanation": "The log subtraction rule gives the log of the quotient: log₂(24)−log₂(3) = log₂(24/3) = log₂(8) = 3, since 2³=8.",
-  "trick": "After combining into a single log via the quotient rule, check whether the result simplifies to a whole number."
- },
- {
-  "id": "ER-LR-3",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Logarithm Rules",
-  "passage": "Which of the following is equivalent to 3log₅(x)?",
-  "question": "Select the equivalent expression.",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "log₅(3x)"
-   },
-   {
-    "letter": "B",
-    "text": "log₅(x³)"
-   },
-   {
-    "letter": "C",
-    "text": "log₅(x)³"
-   },
-   {
-    "letter": "D",
-    "text": "log₅(x + 3)"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "The log power rule moves a coefficient in front of a log to become an exponent inside: 3log₅(x) = log₅(x³).",
-  "trick": "A number multiplying a log can be moved INSIDE as an exponent on the argument — this is the reverse of the more common direction."
- },
- {
-  "id": "ER-LR-4",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Logarithm Rules",
-  "passage": "Given that log(2) ≈ 0.301 and log(3) ≈ 0.477, what is the approximate value of log(6)?",
-  "question": "Select the closest value.",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "0.176"
-   },
-   {
-    "letter": "B",
-    "text": "0.301"
-   },
-   {
-    "letter": "C",
-    "text": "0.477"
-   },
-   {
-    "letter": "D",
-    "text": "0.778"
-   }
-  ],
-  "correctLetter": "D",
-  "explanation": "Since 6 = 2×3, use the product rule: log(6) = log(2)+log(3) ≈ 0.301+0.477 = 0.778.",
-  "trick": "Break an unfamiliar number into factors of numbers you DO know the log of, then apply the addition rule."
- },
- {
-  "id": "ER-LR-5",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Logarithm Rules",
-  "passage": "Which of the following is equivalent to log(x²y)?",
-  "question": "Select the equivalent expression.",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "2log(x) + log(y)"
-   },
-   {
-    "letter": "B",
-    "text": "log(x) · 2 · log(y)"
-   },
-   {
-    "letter": "C",
-    "text": "2log(xy)"
-   },
-   {
-    "letter": "D",
-    "text": "log(2xy)"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "Apply the product rule first: log(x²y) = log(x²)+log(y). Then apply the power rule: log(x²) = 2log(x). Combined: 2log(x)+log(y).",
-  "trick": "Break down a log of a product into a sum of logs first, THEN apply the power rule to any exponents that remain."
- },
- {
-  "id": "ER-LR-6",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Logarithm Rules",
-  "passage": "Given that log_b(2) = 0.4 and log_b(5) = 0.9, what is log_b(2.5)?",
-  "question": "Select the value of this expression.",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "0.13"
-   },
-   {
-    "letter": "B",
-    "text": "0.36"
-   },
-   {
-    "letter": "C",
-    "text": "0.5"
-   },
-   {
-    "letter": "D",
-    "text": "1.3"
-   }
-  ],
-  "correctLetter": "C",
-  "explanation": "Since 2.5 = 5/2, use the quotient rule: log_b(2.5) = log_b(5) − log_b(2) = 0.9 − 0.4 = 0.5.",
-  "trick": "Recognize that 2.5 = 5÷2 lets you use given log values via the quotient rule, instead of trying to compute log_b(2.5) directly."
- },
- {
-  "id": "ER-EQ-1",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Exponential Equations & Growth/Decay",
-  "passage": "Solve the equation 2^(x) = 32.",
-  "question": "What is the value of x?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "4"
-   },
-   {
-    "letter": "B",
-    "text": "5"
-   },
-   {
-    "letter": "C",
-    "text": "16"
-   },
-   {
-    "letter": "D",
-    "text": "30"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "Rewrite 32 as a power of 2: 32 = 2⁵. Since the bases match, set the exponents equal: x = 5.",
-  "trick": "When both sides can be written with the same base, just set the exponents equal — no logarithms needed."
- },
- {
-  "id": "ER-EQ-2",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Exponential Equations & Growth/Decay",
-  "passage": "Solve the equation 5^(2x) = 5^(x + 6).",
-  "question": "What is the value of x?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "2"
-   },
-   {
-    "letter": "B",
-    "text": "3"
-   },
-   {
-    "letter": "C",
-    "text": "6"
-   },
-   {
-    "letter": "D",
-    "text": "12"
-   }
-  ],
-  "correctLetter": "C",
-  "explanation": "Since the bases are already equal, set the exponents equal: 2x = x+6, so x = 6.",
-  "trick": "Same base on both sides means you can drop the base entirely and just work with the exponents as a linear equation."
- },
- {
-  "id": "ER-EQ-3",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Exponential Equations & Growth/Decay",
-  "passage": "Solve the equation 4^(x) = 8.",
-  "question": "What is the value of x?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "1"
-   },
-   {
-    "letter": "B",
-    "text": "3/2"
-   },
-   {
-    "letter": "C",
-    "text": "2"
-   },
-   {
-    "letter": "D",
-    "text": "3"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "Rewrite both sides with base 2: 4^x = (2²)^x = 2^(2x), and 8 = 2³. Set exponents equal: 2x=3, so x=3/2.",
-  "trick": "If the two bases aren't equal but share a common base (like 4 and 8 both being powers of 2), rewrite both before comparing exponents."
- },
- {
-  "id": "ER-EQ-4",
-  "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Exponential Equations & Growth/Decay",
-  "passage": "A population of 500 bacteria doubles every 4 hours, modeled by P(t) = 500 · 2^(t/4).",
-  "question": "How many hours does it take for the population to reach 4,000?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "8"
-   },
-   {
-    "letter": "B",
-    "text": "12"
-   },
-   {
-    "letter": "C",
-    "text": "16"
    },
    {
     "letter": "D",
     "text": "20"
    }
   ],
-  "correctLetter": "B",
-  "explanation": "Set P(t)=4000: 500·2^(t/4) = 4000, so 2^(t/4) = 8 = 2³. Set exponents equal: t/4 = 3, so t = 12.",
-  "trick": "Divide out the starting amount first to isolate the exponential part, then match it to a power of the same base."
+  "correctLetter": "C",
+  "explanation": "Since both sides are already square roots, square both sides directly: x+7=2x−3. Solve: x=10.",
+  "trick": "When both sides are already radicals of the same index, squaring eliminates them both in a single step."
  },
  {
-  "id": "ER-EQ-5",
+  "id": "ER2-RE-5",
   "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Exponential Equations & Growth/Decay",
-  "passage": "A radioactive isotope decays according to A(t) = 400 · (1/2)^(t/6), where t is in years.",
-  "question": "After how many years will only 25 grams remain?",
+  "subtype": "Radical Equations",
+  "passage": "Solve the equation ∛(2x−1) = 3 for x.",
+  "question": "What is the value of x?",
   "choices": [
    {
     "letter": "A",
-    "text": "18"
+    "text": "14"
    },
    {
     "letter": "B",
-    "text": "24"
+    "text": "1"
    },
    {
     "letter": "C",
-    "text": "30"
+    "text": "5"
    },
    {
     "letter": "D",
-    "text": "36"
+    "text": "13"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "Cube both sides: 2x−1=27. Solve: 2x=28, so x=14.",
+  "trick": "For a cube-root equation, cube both sides instead of squaring — no domain restriction to worry about, since cube roots accept negative inputs too."
+ },
+ {
+  "id": "ER2-RE-6",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Radical Equations",
+  "passage": "Solve the equation √(4x+1) = x−1 for x.",
+  "question": "What is (are) the solution(s)?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "x = 0 only"
+   },
+   {
+    "letter": "B",
+    "text": "x = 6 only"
+   },
+   {
+    "letter": "C",
+    "text": "No solution"
+   },
+   {
+    "letter": "D",
+    "text": "x = 0 or x = 6"
    }
   ],
   "correctLetter": "B",
-  "explanation": "Set A(t)=25: 400·(1/2)^(t/6) = 25, so (1/2)^(t/6) = 25/400 = 1/16 = (1/2)⁴. Set exponents equal: t/6 = 4, so t = 24.",
-  "trick": "This is a half-life problem: figure out how many times the amount must halve to reach the target, then multiply by the half-life length."
+  "explanation": "Square both sides: 4x+1=x²−2x+1, so x²−6x=0, giving x(x−6)=0, so x=0 or x=6. Checking x=0: √1=1 but x−1=−1 — doesn't match, so x=0 is extraneous. Checking x=6: √25=5 and x−1=5 — matches. Only x=6 works.",
+  "trick": "Whenever the radical is set equal to an expression (not just a number), extraneous solutions are especially likely — always verify both candidates."
  },
  {
-  "id": "ER-EQ-6",
+  "id": "ER2-RE-7",
   "concept": "Exponents, Radicals & Logarithms",
-  "subtype": "Exponential Equations & Growth/Decay",
-  "passage": "Solve the equation 3^(x + 1) = 27^(x).",
+  "subtype": "Radical Equations",
+  "passage": "Solve the equation 2√(x) + 3 = 11 for x.",
   "question": "What is the value of x?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "49"
+   },
+   {
+    "letter": "B",
+    "text": "4"
+   },
+   {
+    "letter": "C",
+    "text": "16"
+   },
+   {
+    "letter": "D",
+    "text": "64"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Isolate the radical: 2√x=8, so √x=4. Square: x=16.",
+  "trick": "Isolate the radical completely (undo any multiplication or addition around it) before squaring."
+ },
+ {
+  "id": "ER2-LB-1",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Logarithm Basics & Notation",
+  "passage": "Evaluate log₅(125).",
+  "question": "What is the value of this expression?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "2"
+   },
+   {
+    "letter": "B",
+    "text": "3"
+   },
+   {
+    "letter": "C",
+    "text": "25"
+   },
+   {
+    "letter": "D",
+    "text": "5"
+   }
+  ],
+  "correctLetter": "B",
+  "explanation": "Ask: 5 to what power gives 125? Since 5³=125, log₅(125)=3.",
+  "trick": "Reframe any log as a question: \"base to what power equals the number inside?\""
+ },
+ {
+  "id": "ER2-LB-2",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Logarithm Basics & Notation",
+  "passage": "Evaluate log₂(1/32).",
+  "question": "What is the value of this expression?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "−5"
+   },
+   {
+    "letter": "B",
+    "text": "−1/5"
+   },
+   {
+    "letter": "C",
+    "text": "1/5"
+   },
+   {
+    "letter": "D",
+    "text": "5"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "Since 1/32 = 2⁻⁵, log₂(1/32) = −5.",
+  "trick": "A fraction less than 1 inside a log always gives a negative result — recognize the reciprocal power immediately."
+ },
+ {
+  "id": "ER2-LB-3",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Logarithm Basics & Notation",
+  "passage": "Given that x is a positive real number and log_x(64) = 3, what is the value of x?",
+  "question": "Select the value of x.",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "8"
+   },
+   {
+    "letter": "B",
+    "text": "4"
+   },
+   {
+    "letter": "C",
+    "text": "21.3"
+   },
+   {
+    "letter": "D",
+    "text": "192"
+   }
+  ],
+  "correctLetter": "B",
+  "explanation": "Rewrite in exponential form: x³=64, so x=4 (since 4³=64).",
+  "trick": "When the base of a log is the unknown, rewrite in exponential form and solve for that base directly."
+ },
+ {
+  "id": "ER2-LB-4",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Logarithm Basics & Notation",
+  "passage": "Evaluate log₄₉(7).",
+  "question": "What is the value of this expression?",
   "choices": [
    {
     "letter": "A",
@@ -6648,11 +6424,487 @@
    },
    {
     "letter": "B",
+    "text": "49"
+   },
+   {
+    "letter": "C",
+    "text": "2"
+   },
+   {
+    "letter": "D",
+    "text": "7"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "Since 49=7², we have 49^(1/2)=7, so log₄₉(7) = 1/2.",
+  "trick": "Recognize when the base is a power of the number inside the log — this instantly gives a fractional log value."
+ },
+ {
+  "id": "ER2-LB-5",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Logarithm Basics & Notation",
+  "passage": "For all x>0, log_x(8) = y. If x < 8 and x is a positive integer, which of the following could be the value of y?",
+  "question": "Select the possible value of y.",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "4"
+   },
+   {
+    "letter": "B",
+    "text": "3"
+   },
+   {
+    "letter": "C",
+    "text": "2"
+   },
+   {
+    "letter": "D",
+    "text": "1"
+   }
+  ],
+  "correctLetter": "B",
+  "explanation": "Rewrite as x^y=8. The only integer base less than 8 that works is x=2, since 2³=8, giving y=3.",
+  "trick": "Test small integer bases directly in exponential form when a log equation restricts the base to integers."
+ },
+ {
+  "id": "ER2-LB-6",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Logarithm Basics & Notation",
+  "passage": "Solve the equation log₃(x) = 4 for x.",
+  "question": "What is the value of x?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "64"
+   },
+   {
+    "letter": "B",
+    "text": "34"
+   },
+   {
+    "letter": "C",
+    "text": "12"
+   },
+   {
+    "letter": "D",
+    "text": "81"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "Rewrite in exponential form: 3⁴=x, so x=81.",
+  "trick": "To solve for x inside a log, rewrite the equation in exponential form — this isolates x directly."
+ },
+ {
+  "id": "ER2-LB-7",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Logarithm Basics & Notation",
+  "passage": "Solve the equation log₈(x) = 2/3 for x.",
+  "question": "What is the value of x?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "5.33"
+   },
+   {
+    "letter": "B",
+    "text": "16/3"
+   },
+   {
+    "letter": "C",
+    "text": "4"
+   },
+   {
+    "letter": "D",
+    "text": "512"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Rewrite in exponential form: x=8^(2/3) = (8^(1/3))² = 2² = 4.",
+  "trick": "A fractional exponent on the base, once rewritten from log form, still just means root-then-power."
+ },
+ {
+  "id": "ER2-LR-1",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Logarithm Rules",
+  "passage": "Which of the following is equivalent to log(20) + log(5)?",
+  "question": "Select the equivalent expression.",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "log(100)"
+   },
+   {
+    "letter": "B",
+    "text": "log(4)"
+   },
+   {
+    "letter": "C",
+    "text": "log(25)"
+   },
+   {
+    "letter": "D",
+    "text": "log(100) = 2"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "Combine using the product rule: log(20)+log(5) = log(100). Since 10²=100, this also equals exactly 2.",
+  "trick": "After combining logs with the product rule, check whether the result simplifies to a clean whole number."
+ },
+ {
+  "id": "ER2-LR-2",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Logarithm Rules",
+  "passage": "Which of the following is equivalent to log₂(96) − log₂(3)?",
+  "question": "Select the equivalent expression.",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "log₂(32) = 5"
+   },
+   {
+    "letter": "B",
+    "text": "5"
+   },
+   {
+    "letter": "C",
+    "text": "log₂(288)"
+   },
+   {
+    "letter": "D",
+    "text": "log₂(93)"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "Combine using the quotient rule: log₂(96)−log₂(3) = log₂(32). Since 2⁵=32, this equals 5.",
+  "trick": "The quotient rule for logs combines a subtraction into a single log of a division — check if the result is a clean power."
+ },
+ {
+  "id": "ER2-LR-3",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Logarithm Rules",
+  "passage": "Which of the following is equivalent to 2log₅(3)?",
+  "question": "Select the equivalent expression.",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "log₅(3)²"
+   },
+   {
+    "letter": "B",
+    "text": "log₅(6)"
+   },
+   {
+    "letter": "C",
+    "text": "4log₅(3)"
+   },
+   {
+    "letter": "D",
+    "text": "log₅(9)"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "Use the power rule to move the coefficient inside as an exponent: 2log₅(3) = log₅(3²) = log₅(9).",
+  "trick": "A coefficient in front of a log becomes an exponent INSIDE the log — this is the power rule in reverse."
+ },
+ {
+  "id": "ER2-LR-4",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Logarithm Rules",
+  "passage": "Solve the equation log(8) + log(x) = log(56) for x.",
+  "question": "What is the value of x?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "48"
+   },
+   {
+    "letter": "B",
+    "text": "7"
+   },
+   {
+    "letter": "C",
+    "text": "64"
+   },
+   {
+    "letter": "D",
+    "text": "6.5"
+   }
+  ],
+  "correctLetter": "B",
+  "explanation": "Combine the left side: log(8x) = log(56). Since the logs are equal, the arguments must be equal: 8x=56, so x=7.",
+  "trick": "Once both sides are a single log with the same base, drop the logs entirely and set the insides equal."
+ },
+ {
+  "id": "ER2-LR-5",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Logarithm Rules",
+  "passage": "Given that log(2) ≈ 0.301 and log(3) ≈ 0.477, what is the approximate value of log(12)?",
+  "question": "Select the closest value.",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "0.778"
+   },
+   {
+    "letter": "B",
+    "text": "1.431"
+   },
+   {
+    "letter": "C",
+    "text": "1.079"
+   },
+   {
+    "letter": "D",
+    "text": "0.176"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Since 12 = 4×3 = 2²×3, use the rules: log(12) = 2log(2)+log(3) ≈ 2(0.301)+0.477 = 1.079.",
+  "trick": "Break an unfamiliar number into prime factors of numbers you already know the log of, then combine with the product and power rules."
+ },
+ {
+  "id": "ER2-LR-6",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Logarithm Rules",
+  "passage": "Solve the equation log₄(x) + log₄(x−6) = 2 for x, where x > 6.",
+  "question": "What is the value of x?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "16"
+   },
+   {
+    "letter": "B",
+    "text": "10"
+   },
+   {
+    "letter": "C",
+    "text": "2"
+   },
+   {
+    "letter": "D",
+    "text": "8"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "Combine using the product rule: log₄(x(x−6))=2. Rewrite in exponential form: x(x−6)=16, so x²−6x−16=0, which factors as (x−8)(x+2)=0. Since x>6 is required, x=8.",
+  "trick": "After combining logs into one, convert to exponential form to clear the log entirely, then solve the resulting equation — checking any domain restriction at the end."
+ },
+ {
+  "id": "ER2-LR-7",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Logarithm Rules",
+  "passage": "Which of the following is equivalent to log(x³y) for x,y>0?",
+  "question": "Select the equivalent expression.",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "3log(x) + log(y)"
+   },
+   {
+    "letter": "B",
+    "text": "log(x) · 3 · log(y)"
+   },
+   {
+    "letter": "C",
+    "text": "log(3xy)"
+   },
+   {
+    "letter": "D",
+    "text": "3log(xy)"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "Apply the product rule first: log(x³y) = log(x³)+log(y). Then apply the power rule: log(x³)=3log(x). Combined: 3log(x)+log(y).",
+  "trick": "Break a log of a product into separate logs first, then apply the power rule to any exponents that remain."
+ },
+ {
+  "id": "ER2-EQ-1",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Exponential Equations & Growth/Decay",
+  "passage": "Solve the equation 2^(3x) = 2^(x+8) for x.",
+  "question": "What is the value of x?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "8"
+   },
+   {
+    "letter": "B",
+    "text": "24"
+   },
+   {
+    "letter": "C",
+    "text": "2"
+   },
+   {
+    "letter": "D",
+    "text": "4"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "Since the bases match, set the exponents equal: 3x=x+8. Solve: 2x=8, so x=4.",
+  "trick": "When both sides already share the same base, drop the base and just solve the exponent equation."
+ },
+ {
+  "id": "ER2-EQ-2",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Exponential Equations & Growth/Decay",
+  "passage": "Solve the equation 5^(x−2) = 125 for x.",
+  "question": "What is the value of x?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "5"
+   },
+   {
+    "letter": "B",
+    "text": "3"
+   },
+   {
+    "letter": "C",
+    "text": "15"
+   },
+   {
+    "letter": "D",
+    "text": "63"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "Rewrite 125 as a power of 5: 125=5³. Set exponents equal: x−2=3, so x=5.",
+  "trick": "Always rewrite the non-power side using the SAME base first, then compare exponents."
+ },
+ {
+  "id": "ER2-EQ-3",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Exponential Equations & Growth/Decay",
+  "passage": "A city's population is modeled by P(t) = 200(1.05)^t, where t is years from now.",
+  "question": "To the nearest whole number, what is the predicted population in 10 years?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "326"
+   },
+   {
+    "letter": "B",
+    "text": "210"
+   },
+   {
+    "letter": "C",
+    "text": "400"
+   },
+   {
+    "letter": "D",
+    "text": "300"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "Substitute t=10: P(10) = 200(1.05)^10 ≈ 200(1.629) ≈ 326.",
+  "trick": "Growth-model \"predict the future value\" problems just require substituting the given time into the formula."
+ },
+ {
+  "id": "ER2-EQ-4",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Exponential Equations & Growth/Decay",
+  "passage": "A radioactive sample of 80 grams decays to 10 grams after 15 days, with a constant half-life.",
+  "question": "What is the half-life of this sample, in days?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "10"
+   },
+   {
+    "letter": "B",
+    "text": "5"
+   },
+   {
+    "letter": "C",
+    "text": "3"
+   },
+   {
+    "letter": "D",
+    "text": "7.5"
+   }
+  ],
+  "correctLetter": "B",
+  "explanation": "80 grams halving to 10 grams requires 3 half-lives (80→40→20→10). Over 15 days, each half-life is 15/3=5 days.",
+  "trick": "Count how many times the amount must halve to reach the target, then divide the total time by that count."
+ },
+ {
+  "id": "ER2-EQ-5",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Exponential Equations & Growth/Decay",
+  "passage": "Solve the equation 4^(2x−1) = 64 for x.",
+  "question": "What is the value of x?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "2.5"
+   },
+   {
+    "letter": "B",
+    "text": "4"
+   },
+   {
+    "letter": "C",
+    "text": "1"
+   },
+   {
+    "letter": "D",
+    "text": "2"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "Rewrite 64 as a power of 4: 64=4³. Set exponents equal: 2x−1=3, so 2x=4, giving x=2.",
+  "trick": "Recognize common base conversions (like 64=4³) quickly — they're the key step in nearly every exponential equation."
+ },
+ {
+  "id": "ER2-EQ-6",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Exponential Equations & Growth/Decay",
+  "passage": "An account with $1,000 earns 6% annual interest compounded quarterly, following A=1,000(1+0.06/4)^(4t).",
+  "question": "To the nearest dollar, what is the account balance after 5 years?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "$1,338"
+   },
+   {
+    "letter": "B",
+    "text": "$1,300"
+   },
+   {
+    "letter": "C",
+    "text": "$1,347"
+   },
+   {
+    "letter": "D",
+    "text": "$1,500"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Substitute t=5: A = 1,000(1.015)^20 ≈ 1,000(1.34685) ≈ $1,347.",
+  "trick": "Compound interest is just repeated multiplication by (1 + rate per period) — substitute carefully and let the exponent do the work."
+ },
+ {
+  "id": "ER2-EQ-7",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Exponential Equations & Growth/Decay",
+  "passage": "Solve the equation 9^x = 27^(x−1) for x.",
+  "question": "What is the value of x?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "3"
+   },
+   {
+    "letter": "B",
     "text": "1"
    },
    {
     "letter": "C",
-    "text": "3/2"
+    "text": "9"
    },
    {
     "letter": "D",
@@ -6660,8 +6912,36 @@
    }
   ],
   "correctLetter": "A",
-  "explanation": "Rewrite 27 as 3³: 3^(x+1) = (3³)^x = 3^(3x). Set exponents equal: x+1 = 3x. Solve: 1 = 2x, so x = 1/2.",
-  "trick": "Always rewrite every term with the SAME base before comparing exponents — here 27 = 3³ is the key conversion."
+  "explanation": "Rewrite both sides with base 3: 9^x=(3²)^x=3^(2x), and 27^(x−1)=(3³)^(x−1)=3^(3x−3). Set exponents equal: 2x=3x−3, so x=3.",
+  "trick": "Convert every term to the SAME base before comparing exponents — here, base 3 works for both 9 and 27."
+ },
+ {
+  "id": "ER2-EQ-8",
+  "concept": "Exponents, Radicals & Logarithms",
+  "subtype": "Exponential Equations & Growth/Decay",
+  "passage": "An investment loses 20% of its value each year, starting at $5,000.",
+  "question": "What is the value of the investment after 3 years?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "$3,000"
+   },
+   {
+    "letter": "B",
+    "text": "$3,200"
+   },
+   {
+    "letter": "C",
+    "text": "$2,560"
+   },
+   {
+    "letter": "D",
+    "text": "$2,000"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Each year the value is multiplied by (1−0.20)=0.80. After 3 years: 5,000(0.80)³ = 5,000(0.512) = $2,560.",
+  "trick": "Percent decrease compounds the same way percent increase does — multiply by (1 − rate) repeatedly."
  },
  {
   "id": "SQ-AS-1",
@@ -11144,403 +11424,11 @@
   "trick": "In a two-way table, a column total minus one row's count within that column gives you the other row's count in that same column."
  },
  {
-  "id": "PR-BP-1",
+  "id": "PR2-BP-1",
   "concept": "Probability & Counting",
   "subtype": "Basic Probability",
-  "passage": "A fair six-sided die is rolled once.",
-  "question": "What is the probability that the result is greater than 4?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "1/6"
-   },
-   {
-    "letter": "B",
-    "text": "1/3"
-   },
-   {
-    "letter": "C",
-    "text": "1/2"
-   },
-   {
-    "letter": "D",
-    "text": "2/3"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "The outcomes greater than 4 are 5 and 6 — 2 out of 6 possible outcomes. P = 2/6 = 1/3.",
-  "trick": "Probability is always (favorable outcomes)/(total outcomes) — count both carefully before simplifying."
- },
- {
-  "id": "PR-BP-2",
-  "concept": "Probability & Counting",
-  "subtype": "Basic Probability",
-  "passage": "A standard deck of 52 playing cards has 4 suits of 13 cards each. One card is drawn at random.",
-  "question": "What is the probability that the card is a heart?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "1/13"
-   },
-   {
-    "letter": "B",
-    "text": "1/4"
-   },
-   {
-    "letter": "C",
-    "text": "13/52"
-   },
-   {
-    "letter": "D",
-    "text": "4/13"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "There are 13 hearts out of 52 cards. P = 13/52 = 1/4.",
-  "trick": "13/52 and 1/4 represent the same probability — always check if a fraction answer choice needs simplifying to match."
- },
- {
-  "id": "PR-BP-3",
-  "concept": "Probability & Counting",
-  "subtype": "Basic Probability",
-  "passage": "A bag contains 5 red marbles, 3 blue marbles, and 2 green marbles. One marble is drawn at random.",
-  "question": "What is the probability that the marble is blue?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "1/5"
-   },
-   {
-    "letter": "B",
-    "text": "3/10"
-   },
-   {
-    "letter": "C",
-    "text": "3/8"
-   },
-   {
-    "letter": "D",
-    "text": "1/2"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "There are 3 blue marbles out of 5+3+2 = 10 total marbles. P = 3/10.",
-  "trick": "Always add up ALL categories to get the true total — it's easy to accidentally divide by just one other category."
- },
- {
-  "id": "PR-BP-4",
-  "concept": "Probability & Counting",
-  "subtype": "Basic Probability",
-  "passage": "The probability of an event is 3/8.",
-  "question": "What is this probability expressed as a percent?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "3.8%"
-   },
-   {
-    "letter": "B",
-    "text": "8%"
-   },
-   {
-    "letter": "C",
-    "text": "37.5%"
-   },
-   {
-    "letter": "D",
-    "text": "62.5%"
-   }
-  ],
-  "correctLetter": "C",
-  "explanation": "Divide and convert: 3/8 = 0.375 = 37.5%.",
-  "trick": "To convert a probability fraction to a percent, divide the numerator by the denominator, then multiply by 100."
- },
- {
-  "id": "PR-BP-5",
-  "concept": "Probability & Counting",
-  "subtype": "Basic Probability",
-  "passage": "A jar contains tickets numbered 1 through 20. One ticket is drawn at random.",
-  "question": "What is the probability that the number drawn is a multiple of 3?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "3/20"
-   },
-   {
-    "letter": "B",
-    "text": "1/3"
-   },
-   {
-    "letter": "C",
-    "text": "6/20"
-   },
-   {
-    "letter": "D",
-    "text": "7/20"
-   }
-  ],
-  "correctLetter": "C",
-  "explanation": "The multiples of 3 from 1–20 are 3, 6, 9, 12, 15, 18 — six numbers. P = 6/20.",
-  "trick": "List out the actual favorable outcomes for \"multiple of\" problems rather than estimating — it's easy to miscount by one."
- },
- {
-  "id": "PR-BP-6",
-  "concept": "Probability & Counting",
-  "subtype": "Basic Probability",
-  "passage": "A spinner is divided into 8 equal sections, numbered 1 through 8.",
-  "question": "What is the probability of spinning a number that is even?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "1/8"
-   },
-   {
-    "letter": "B",
-    "text": "3/8"
-   },
-   {
-    "letter": "C",
-    "text": "1/2"
-   },
-   {
-    "letter": "D",
-    "text": "5/8"
-   }
-  ],
-  "correctLetter": "C",
-  "explanation": "The even numbers from 1–8 are 2, 4, 6, 8 — four numbers out of 8 total. P = 4/8 = 1/2.",
-  "trick": "Exactly half of any consecutive run of integers starting at 1 are even — a quick mental shortcut."
- },
- {
-  "id": "PR-CM-1",
-  "concept": "Probability & Counting",
-  "subtype": "Complementary & Mutually Exclusive Events",
-  "passage": "The probability that it rains tomorrow is 0.3.",
-  "question": "What is the probability that it does NOT rain tomorrow?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "0.3"
-   },
-   {
-    "letter": "B",
-    "text": "0.5"
-   },
-   {
-    "letter": "C",
-    "text": "0.7"
-   },
-   {
-    "letter": "D",
-    "text": "1.3"
-   }
-  ],
-  "correctLetter": "C",
-  "explanation": "Complementary probabilities always sum to 1: P(not rain) = 1 − 0.3 = 0.7.",
-  "trick": "\"Not\" always means 1 minus the given probability — no other calculation is needed."
- },
- {
-  "id": "PR-CM-2",
-  "concept": "Probability & Counting",
-  "subtype": "Complementary & Mutually Exclusive Events",
-  "passage": "A single six-sided die is rolled twice, and the two results are added together.",
-  "question": "What is the probability that the sum is 7 or 11? (These two sums are mutually exclusive.)",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "1/6"
-   },
-   {
-    "letter": "B",
-    "text": "1/9"
-   },
-   {
-    "letter": "C",
-    "text": "2/9"
-   },
-   {
-    "letter": "D",
-    "text": "5/36"
-   }
-  ],
-  "correctLetter": "C",
-  "explanation": "P(sum=7) = 6/36 and P(sum=11) = 2/36. Since these are mutually exclusive (can't both happen on the same roll), add them: 6/36 + 2/36 = 8/36 = 2/9.",
-  "trick": "For mutually exclusive events, P(A or B) = P(A) + P(B) — simple addition, no overlap to subtract."
- },
- {
-  "id": "PR-CM-3",
-  "concept": "Probability & Counting",
-  "subtype": "Complementary & Mutually Exclusive Events",
-  "passage": "One card is drawn from a standard 52-card deck.",
-  "question": "What is the probability that the card is a king OR a heart?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "4/13"
-   },
-   {
-    "letter": "B",
-    "text": "17/52"
-   },
-   {
-    "letter": "C",
-    "text": "1/13"
-   },
-   {
-    "letter": "D",
-    "text": "1/4"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "P(king) = 4/52, P(heart) = 13/52, P(king and heart) = 1/52 (the king of hearts). Since these overlap, use P(A or B) = P(A)+P(B)−P(A and B) = 4/52+13/52−1/52 = 16/52 = 4/13.",
-  "trick": "\"King or heart\" overlaps at the king of hearts — always subtract the overlap when the two events aren't mutually exclusive."
- },
- {
-  "id": "PR-CM-4",
-  "concept": "Probability & Counting",
-  "subtype": "Complementary & Mutually Exclusive Events",
-  "passage": "In a factory, the probability that a randomly selected item is defective is 0.05.",
-  "question": "What is the probability that a randomly selected item is NOT defective?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "0.05"
-   },
-   {
-    "letter": "B",
-    "text": "0.5"
-   },
-   {
-    "letter": "C",
-    "text": "0.95"
-   },
-   {
-    "letter": "D",
-    "text": "1.05"
-   }
-  ],
-  "correctLetter": "C",
-  "explanation": "P(not defective) = 1 − P(defective) = 1 − 0.05 = 0.95.",
-  "trick": "Defect-rate problems are classic complement setups — 1 minus the defect rate gives the \"good\" rate directly."
- },
- {
-  "id": "PR-CM-5",
-  "concept": "Probability & Counting",
-  "subtype": "Complementary & Mutually Exclusive Events",
-  "passage": "A single six-sided die is rolled once.",
-  "question": "What is the probability of rolling a 2 OR a 5? (These outcomes are mutually exclusive.)",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "1/6"
-   },
-   {
-    "letter": "B",
-    "text": "1/3"
-   },
-   {
-    "letter": "C",
-    "text": "1/2"
-   },
-   {
-    "letter": "D",
-    "text": "2/3"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "Since a single roll can't show two numbers at once, these are mutually exclusive: P(2 or 5) = 1/6 + 1/6 = 2/6 = 1/3.",
-  "trick": "Any two different specific outcomes from a single trial (like one die roll) are automatically mutually exclusive."
- },
- {
-  "id": "PR-CM-6",
-  "concept": "Probability & Counting",
-  "subtype": "Complementary & Mutually Exclusive Events",
-  "passage": "One card is drawn from a standard 52-card deck.",
-  "question": "What is the probability that the card is a jack OR a queen? (These are mutually exclusive.)",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "2/13"
-   },
-   {
-    "letter": "B",
-    "text": "1/13"
-   },
-   {
-    "letter": "C",
-    "text": "8/52"
-   },
-   {
-    "letter": "D",
-    "text": "4/13"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "P(jack) = 4/52, P(queen) = 4/52. Since a card can't be both a jack and a queen, these are mutually exclusive: 4/52 + 4/52 = 8/52 = 2/13.",
-  "trick": "Different card ranks (jack vs. queen) never overlap on one card — safe to just add their probabilities directly."
- },
- {
-  "id": "PR-IE-1",
-  "concept": "Probability & Counting",
-  "subtype": "Independent Events & Multiplication Rule",
-  "passage": "A fair coin is flipped twice.",
-  "question": "What is the probability that both flips result in heads?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "1/4"
-   },
-   {
-    "letter": "B",
-    "text": "1/2"
-   },
-   {
-    "letter": "C",
-    "text": "1/3"
-   },
-   {
-    "letter": "D",
-    "text": "2/3"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "The two flips are independent, so multiply their probabilities: P(H) × P(H) = 1/2 × 1/2 = 1/4.",
-  "trick": "Independent events: multiply the individual probabilities. Look for \"and\" language, which signals multiplication."
- },
- {
-  "id": "PR-IE-2",
-  "concept": "Probability & Counting",
-  "subtype": "Independent Events & Multiplication Rule",
-  "passage": "A fair six-sided die is rolled twice.",
-  "question": "What is the probability that both rolls show a 6?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "1/6"
-   },
-   {
-    "letter": "B",
-    "text": "1/12"
-   },
-   {
-    "letter": "C",
-    "text": "1/36"
-   },
-   {
-    "letter": "D",
-    "text": "2/6"
-   }
-  ],
-  "correctLetter": "C",
-  "explanation": "The rolls are independent: P(6) × P(6) = 1/6 × 1/6 = 1/36.",
-  "trick": "Rolling the same die twice (or two different dice once each) are both independent-event situations — same multiplication rule applies."
- },
- {
-  "id": "PR-IE-3",
-  "concept": "Probability & Counting",
-  "subtype": "Independent Events & Multiplication Rule",
-  "passage": "A bag contains 4 red marbles and 6 blue marbles. A marble is drawn, its color noted, and then it is placed BACK in the bag before a second marble is drawn.",
-  "question": "What is the probability that both marbles drawn are red?",
+  "passage": "A bag contains 8 red marbles, 5 blue marbles, and 7 green marbles.",
+  "question": "What is the probability that a marble drawn at random is NOT red?",
   "choices": [
    {
     "letter": "A",
@@ -11548,59 +11436,423 @@
    },
    {
     "letter": "B",
-    "text": "4/25"
+    "text": "8/20"
    },
    {
     "letter": "C",
-    "text": "6/25"
+    "text": "12/13"
    },
    {
     "letter": "D",
-    "text": "2/15"
+    "text": "3/5"
    }
   ],
-  "correctLetter": "B",
-  "explanation": "Because the marble is replaced, the two draws are independent with the same probabilities each time: P(red) × P(red) = 4/10 × 4/10 = 16/100 = 4/25.",
-  "trick": "\"Replaced\" is the key word — it keeps the probabilities identical for each draw, making the draws independent."
+  "correctLetter": "D",
+  "explanation": "There are 12 non-red marbles out of 20 total: 12/20 = 3/5.",
+  "trick": "\"Not red\" always means total minus red, over total — no need to work with red directly at all."
  },
  {
-  "id": "PR-IE-4",
+  "id": "PR2-BP-2",
   "concept": "Probability & Counting",
-  "subtype": "Independent Events & Multiplication Rule",
-  "passage": "Events A, B, and C are independent, with P(A) = 0.5, P(B) = 0.4, and P(C) = 0.6.",
-  "question": "What is P(A and B and C)?",
+  "subtype": "Basic Probability",
+  "passage": "A spinner is divided into 12 equal sections, numbered 1 through 12.",
+  "question": "What is the probability that the spinner lands on a multiple of 3?",
   "choices": [
    {
     "letter": "A",
-    "text": "0.10"
+    "text": "1/4"
    },
    {
     "letter": "B",
-    "text": "0.12"
+    "text": "1/3"
    },
    {
     "letter": "C",
-    "text": "0.15"
+    "text": "4/9"
    },
    {
     "letter": "D",
-    "text": "1.50"
+    "text": "3/12"
    }
   ],
   "correctLetter": "B",
-  "explanation": "For independent events, multiply all three probabilities: 0.5 × 0.4 × 0.6 = 0.12.",
-  "trick": "Multiplying three (or more) independent probabilities together works the same way as multiplying two — just extend the chain."
+  "explanation": "The multiples of 3 from 1–12 are 3, 6, 9, 12 — four numbers out of 12. P = 4/12 = 1/3.",
+  "trick": "List the actual favorable outcomes for \"multiple of\" problems — don't estimate the count."
  },
  {
-  "id": "PR-IE-5",
+  "id": "PR2-BP-3",
   "concept": "Probability & Counting",
-  "subtype": "Independent Events & Multiplication Rule",
-  "passage": "The probability of rain on any given day this week is 0.2, independent of other days.",
-  "question": "What is the probability that it rains on both Monday and Tuesday?",
+  "subtype": "Basic Probability",
+  "passage": "Two standard six-sided dice are rolled, and the two numbers showing are added.",
+  "question": "What is the probability that the sum is greater than 9?",
   "choices": [
    {
     "letter": "A",
+    "text": "1/9"
+   },
+   {
+    "letter": "B",
+    "text": "1/12"
+   },
+   {
+    "letter": "C",
+    "text": "5/36"
+   },
+   {
+    "letter": "D",
+    "text": "1/6"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "The pairs that sum to more than 9 are: (4,6),(6,4),(5,5),(5,6),(6,5),(6,6) — 6 outcomes out of 36. P = 6/36 = 1/6.",
+  "trick": "For dice-sum probability, list every ordered pair that works — (4,6) and (6,4) both count separately."
+ },
+ {
+  "id": "PR2-BP-4",
+  "concept": "Probability & Counting",
+  "subtype": "Basic Probability",
+  "passage": "One card is drawn from a standard 52-card deck.",
+  "question": "What is the probability that the card is a face card (jack, queen, or king)?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "3/52"
+   },
+   {
+    "letter": "B",
+    "text": "3/13"
+   },
+   {
+    "letter": "C",
+    "text": "4/13"
+   },
+   {
+    "letter": "D",
+    "text": "12/13"
+   }
+  ],
+  "correctLetter": "B",
+  "explanation": "There are 3 face cards in each of 4 suits: 3×4=12 face cards out of 52. P = 12/52 = 3/13.",
+  "trick": "Face cards means jack, queen, king only — don't accidentally include aces."
+ },
+ {
+  "id": "PR2-BP-5",
+  "concept": "Probability & Counting",
+  "subtype": "Basic Probability",
+  "passage": "A raffle sells 200 tickets, 15 of which are winning tickets.",
+  "question": "If you buy exactly 1 ticket, what is the probability that it is NOT a winning ticket?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "15/200"
+   },
+   {
+    "letter": "B",
+    "text": "185/185"
+   },
+   {
+    "letter": "C",
+    "text": "3/40"
+   },
+   {
+    "letter": "D",
+    "text": "37/40"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "There are 200−15=185 non-winning tickets out of 200: 185/200 = 37/40.",
+  "trick": "Simplify the \"not\" fraction at the end — 185/200 reduces cleanly to 37/40."
+ },
+ {
+  "id": "PR2-BP-6",
+  "concept": "Probability & Counting",
+  "subtype": "Basic Probability",
+  "passage": "A jar contains tickets numbered 1 through 50.",
+  "question": "What is the probability that a ticket drawn at random shows a perfect square?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "1/7"
+   },
+   {
+    "letter": "B",
+    "text": "1/5"
+   },
+   {
+    "letter": "C",
+    "text": "7/50"
+   },
+   {
+    "letter": "D",
+    "text": "1/10"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "The perfect squares from 1–50 are 1, 4, 9, 16, 25, 36, 49 — seven numbers. P = 7/50.",
+  "trick": "List every perfect square up to the limit carefully — it's easy to miss one or go one too far."
+ },
+ {
+  "id": "PR2-BP-7",
+  "concept": "Probability & Counting",
+  "subtype": "Basic Probability",
+  "passage": "A survey of 850 shoppers found that 340 preferred online shopping.",
+  "question": "If one shopper from this survey is selected at random, what is the probability that they prefer online shopping, expressed as a decimal?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "0.66"
+   },
+   {
+    "letter": "B",
+    "text": "0.40"
+   },
+   {
+    "letter": "C",
+    "text": "0.44"
+   },
+   {
+    "letter": "D",
+    "text": "0.34"
+   }
+  ],
+  "correctLetter": "B",
+  "explanation": "340 out of 850 preferred online shopping: 340/850 = 0.40.",
+  "trick": "Convert survey-count probability questions to a decimal by simple division — no need to simplify the fraction first."
+ },
+ {
+  "id": "PR2-CM-1",
+  "concept": "Probability & Counting",
+  "subtype": "Complementary & Mutually Exclusive Events",
+  "passage": "The probability of rain tomorrow is 0.35.",
+  "question": "What is the probability that it does NOT rain tomorrow?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "0.35"
+   },
+   {
+    "letter": "B",
+    "text": "0.55"
+   },
+   {
+    "letter": "C",
+    "text": "1.35"
+   },
+   {
+    "letter": "D",
+    "text": "0.65"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "Complementary probabilities always sum to 1: P(not rain) = 1 − 0.35 = 0.65.",
+  "trick": "\"Not\" always means 1 minus the given probability."
+ },
+ {
+  "id": "PR2-CM-2",
+  "concept": "Probability & Counting",
+  "subtype": "Complementary & Mutually Exclusive Events",
+  "passage": "Two dice are rolled, and the sum is recorded.",
+  "question": "What is the probability that the sum is 4 OR the sum is 10? (These outcomes are mutually exclusive.)",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "1/9"
+   },
+   {
+    "letter": "B",
+    "text": "5/18"
+   },
+   {
+    "letter": "C",
+    "text": "1/6"
+   },
+   {
+    "letter": "D",
+    "text": "1/12"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "P(sum=4)=3/36 and P(sum=10)=3/36. Since a single roll can't produce two different sums, these are mutually exclusive: 3/36+3/36=6/36=1/6.",
+  "trick": "Mutually exclusive events: add the probabilities directly, no overlap to subtract."
+ },
+ {
+  "id": "PR2-CM-3",
+  "concept": "Probability & Counting",
+  "subtype": "Complementary & Mutually Exclusive Events",
+  "passage": "One card is drawn from a standard deck.",
+  "question": "What is the probability that the card is a heart OR a spade? (These suits are mutually exclusive.)",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "1/2"
+   },
+   {
+    "letter": "B",
+    "text": "1/4"
+   },
+   {
+    "letter": "C",
+    "text": "1"
+   },
+   {
+    "letter": "D",
+    "text": "13/26"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "P(heart)=13/52 and P(spade)=13/52. Since a card can't be both suits, add directly: 13/52+13/52=26/52=1/2.",
+  "trick": "Different suits on a single card never overlap — safe to add their probabilities directly."
+ },
+ {
+  "id": "PR2-CM-4",
+  "concept": "Probability & Counting",
+  "subtype": "Complementary & Mutually Exclusive Events",
+  "passage": "Numbers 1 through 12 are written on identical slips of paper and placed in a bag.",
+  "question": "What is the probability that a randomly drawn number is even OR greater than 8? (These outcomes overlap.)",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "1/2"
+   },
+   {
+    "letter": "B",
+    "text": "1/3"
+   },
+   {
+    "letter": "C",
+    "text": "2/3"
+   },
+   {
+    "letter": "D",
+    "text": "5/6"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "P(even)=6/12, P(>8)=4/12. The overlap (even AND >8) includes 10 and 12: 2/12. Using P(A or B)=P(A)+P(B)−P(A and B): 6/12+4/12−2/12=8/12=2/3.",
+  "trick": "When two conditions can overlap, always subtract the double-counted outcomes once."
+ },
+ {
+  "id": "PR2-CM-5",
+  "concept": "Probability & Counting",
+  "subtype": "Complementary & Mutually Exclusive Events",
+  "passage": "In a factory, the probability that a randomly selected item is defective is 0.04.",
+  "question": "What is the probability that a randomly selected item is NOT defective?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "0.4"
+   },
+   {
+    "letter": "B",
     "text": "0.04"
+   },
+   {
+    "letter": "C",
+    "text": "1.04"
+   },
+   {
+    "letter": "D",
+    "text": "0.96"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "P(not defective) = 1 − 0.04 = 0.96.",
+  "trick": "Defect-rate problems are classic complements — 1 minus the defect rate gives the \"good\" rate."
+ },
+ {
+  "id": "PR2-CM-6",
+  "concept": "Probability & Counting",
+  "subtype": "Complementary & Mutually Exclusive Events",
+  "passage": "A single card is drawn from a standard deck.",
+  "question": "What is the probability that the card is a 7 OR a king? (These ranks are mutually exclusive.)",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "8/13"
+   },
+   {
+    "letter": "B",
+    "text": "2/13"
+   },
+   {
+    "letter": "C",
+    "text": "4/13"
+   },
+   {
+    "letter": "D",
+    "text": "1/26"
+   }
+  ],
+  "correctLetter": "B",
+  "explanation": "P(7)=4/52 and P(king)=4/52. Since a card can't be both ranks, add directly: 4/52+4/52=8/52=2/13.",
+  "trick": "Different ranks on one card never overlap — the same logic as different suits."
+ },
+ {
+  "id": "PR2-IE-1",
+  "concept": "Probability & Counting",
+  "subtype": "Independent Events & Multiplication Rule",
+  "passage": "Two spinners are each divided into 4 equal sections, one of which is red on each spinner.",
+  "question": "Both spinners are spun once. What is the probability that both land on red?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "1/4"
+   },
+   {
+    "letter": "B",
+    "text": "1/8"
+   },
+   {
+    "letter": "C",
+    "text": "1/16"
+   },
+   {
+    "letter": "D",
+    "text": "1/2"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "The two spins are independent: P(red) × P(red) = 1/4 × 1/4 = 1/16.",
+  "trick": "Independent events: multiply the individual probabilities directly."
+ },
+ {
+  "id": "PR2-IE-2",
+  "concept": "Probability & Counting",
+  "subtype": "Independent Events & Multiplication Rule",
+  "passage": "A fair coin is flipped 3 times.",
+  "question": "What is the probability that all 3 flips result in heads?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "1/3"
+   },
+   {
+    "letter": "B",
+    "text": "3/8"
+   },
+   {
+    "letter": "C",
+    "text": "1/8"
+   },
+   {
+    "letter": "D",
+    "text": "1/6"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Each flip is independent: (1/2)×(1/2)×(1/2) = 1/8.",
+  "trick": "For \"all n times\" independent-event problems, raise the single-event probability to the nth power."
+ },
+ {
+  "id": "PR2-IE-3",
+  "concept": "Probability & Counting",
+  "subtype": "Independent Events & Multiplication Rule",
+  "passage": "Events A and B are independent, with P(A) = 0.4 and P(B) = 0.5.",
+  "question": "What is P(A and B)?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "0.9"
    },
    {
     "letter": "B",
@@ -11608,307 +11860,307 @@
    },
    {
     "letter": "C",
-    "text": "0.4"
+    "text": "0.1"
    },
    {
     "letter": "D",
-    "text": "0.8"
+    "text": "0.45"
    }
   ],
-  "correctLetter": "A",
-  "explanation": "Since the days are independent: P(rain Monday) × P(rain Tuesday) = 0.2 × 0.2 = 0.04.",
-  "trick": "\"Independent of other days\" is an explicit signal to multiply the daily probabilities together."
+  "correctLetter": "B",
+  "explanation": "For independent events, multiply the probabilities: 0.4 × 0.5 = 0.2.",
+  "trick": "\"And\" with independent events always means multiply — this is the definition of independence."
  },
  {
-  "id": "PR-IE-6",
+  "id": "PR2-IE-4",
   "concept": "Probability & Counting",
   "subtype": "Independent Events & Multiplication Rule",
-  "passage": "A spinner has a 1/3 chance of landing on red. It is spun 3 times.",
-  "question": "What is the probability that it lands on red all 3 times?",
+  "passage": "A bag contains 3 red marbles and 7 blue marbles. A marble is drawn, its color noted, and then it is placed BACK in the bag before a second marble is drawn.",
+  "question": "What is the probability that both marbles drawn are blue?",
   "choices": [
    {
     "letter": "A",
-    "text": "1/3"
+    "text": "49/100"
    },
    {
     "letter": "B",
-    "text": "1/9"
+    "text": "21/50"
    },
    {
     "letter": "C",
-    "text": "1/27"
+    "text": "7/10"
    },
    {
     "letter": "D",
-    "text": "3/9"
+    "text": "7/20"
    }
   ],
-  "correctLetter": "C",
-  "explanation": "Each spin is independent: (1/3) × (1/3) × (1/3) = 1/27.",
-  "trick": "For \"all n times\" independent-event problems, just raise the single-event probability to the nth power."
+  "correctLetter": "A",
+  "explanation": "Because the marble is replaced, the draws are independent with the same probability each time: (7/10)×(7/10) = 49/100.",
+  "trick": "\"Replaced\" is the signal word that makes repeated draws independent — the probability never changes between draws."
  },
  {
-  "id": "PR-CD-1",
+  "id": "PR2-IE-5",
+  "concept": "Probability & Counting",
+  "subtype": "Independent Events & Multiplication Rule",
+  "passage": "A quality-control test has a 90% pass rate, and 3 items are tested independently.",
+  "question": "What is the probability that all 3 items pass?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "0.729"
+   },
+   {
+    "letter": "B",
+    "text": "0.27"
+   },
+   {
+    "letter": "C",
+    "text": "0.81"
+   },
+   {
+    "letter": "D",
+    "text": "0.9"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "Multiply the independent probabilities: 0.9 × 0.9 × 0.9 = 0.729.",
+  "trick": "For repeated independent trials with the same probability, raise that probability to the number of trials."
+ },
+ {
+  "id": "PR2-IE-6",
+  "concept": "Probability & Counting",
+  "subtype": "Independent Events & Multiplication Rule",
+  "passage": "The probability that a certain traffic light is red when a driver approaches is 1/3, independent from day to day.",
+  "question": "What is the probability that the light is red on both Monday and Tuesday for this driver?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "1/9"
+   },
+   {
+    "letter": "B",
+    "text": "1/6"
+   },
+   {
+    "letter": "C",
+    "text": "2/3"
+   },
+   {
+    "letter": "D",
+    "text": "2/9"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "Since the days are independent: P(red Monday) × P(red Tuesday) = 1/3 × 1/3 = 1/9.",
+  "trick": "\"Independent from day to day\" is a direct signal to multiply the daily probabilities."
+ },
+ {
+  "id": "PR2-CD-1",
   "concept": "Probability & Counting",
   "subtype": "Conditional (Dependent) Probability",
-  "passage": "A bag contains 5 red marbles and 3 blue marbles. Two marbles are drawn one at a time, WITHOUT replacement.",
+  "passage": "A bag contains 6 red marbles and 4 blue marbles. Two marbles are drawn one at a time, WITHOUT replacement.",
   "question": "What is the probability that both marbles drawn are red?",
   "choices": [
    {
     "letter": "A",
-    "text": "5/14"
-   },
-   {
-    "letter": "B",
-    "text": "5/8"
-   },
-   {
-    "letter": "C",
-    "text": "25/64"
-   },
-   {
-    "letter": "D",
-    "text": "4/7"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "P(1st red) = 5/8. Since the first marble isn't replaced, only 4 red marbles remain out of 7 total for the second draw: P(2nd red) = 4/7. Multiply: 5/8 × 4/7 = 20/56 = 5/14.",
-  "trick": "\"Without replacement\" means the second probability's denominator (and possibly numerator) shrinks by 1 — recompute it fresh, don't reuse the first draw's probability."
- },
- {
-  "id": "PR-CD-2",
-  "concept": "Probability & Counting",
-  "subtype": "Conditional (Dependent) Probability",
-  "passage": "For two events, P(A and B) = 0.2 and P(B) = 0.4.",
-  "question": "What is P(A | B) (the probability of A given B)?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "0.08"
-   },
-   {
-    "letter": "B",
-    "text": "0.5"
-   },
-   {
-    "letter": "C",
-    "text": "0.6"
-   },
-   {
-    "letter": "D",
-    "text": "2.0"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "Conditional probability formula: P(A|B) = P(A and B)/P(B) = 0.2/0.4 = 0.5.",
-  "trick": "P(A|B) = P(A and B) / P(B) — memorize this formula exactly; the denominator is always the \"given\" event."
- },
- {
-  "id": "PR-CD-3",
-  "concept": "Probability & Counting",
-  "subtype": "Conditional (Dependent) Probability",
-  "passage": "A standard deck of 52 cards has 2 cards removed: the ace of spades and the king of hearts. One card is then drawn from the remaining 50 cards.",
-  "question": "What is the probability that the card drawn is an ace?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "3/50"
-   },
-   {
-    "letter": "B",
-    "text": "4/50"
-   },
-   {
-    "letter": "C",
-    "text": "3/52"
-   },
-   {
-    "letter": "D",
-    "text": "4/52"
-   }
-  ],
-  "correctLetter": "A",
-  "explanation": "Since the ace of spades was already removed, only 3 aces remain among the 50 remaining cards: P = 3/50.",
-  "trick": "When items are removed before a draw, adjust BOTH the favorable count and the total count to reflect what's actually left."
- },
- {
-  "id": "PR-CD-4",
-  "concept": "Probability & Counting",
-  "subtype": "Conditional (Dependent) Probability",
-  "passage": "A box contains 10 light bulbs, 3 of which are defective. Two bulbs are selected at random, one after another, without replacement.",
-  "question": "What is the probability that the first bulb is defective and the second bulb is also defective?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "9/100"
-   },
-   {
-    "letter": "B",
-    "text": "1/15"
-   },
-   {
-    "letter": "C",
-    "text": "3/10"
-   },
-   {
-    "letter": "D",
-    "text": "6/90"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "P(1st defective) = 3/10. With one defective bulb now removed, P(2nd defective) = 2/9. Multiply: 3/10 × 2/9 = 6/90 = 1/15.",
-  "trick": "Dependent \"both\" problems: multiply the first probability by the SECOND probability recalculated after removing one item."
- },
- {
-  "id": "PR-CD-5",
-  "concept": "Probability & Counting",
-  "subtype": "Conditional (Dependent) Probability",
-  "passage": "In a class of 30 students, 18 play a sport and 12 do not. Of the students who play a sport, 6 are seniors.",
-  "question": "What is the probability that a randomly selected student is a senior, GIVEN that they play a sport?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "1/5"
-   },
-   {
-    "letter": "B",
-    "text": "1/3"
-   },
-   {
-    "letter": "C",
     "text": "3/5"
    },
    {
-    "letter": "D",
-    "text": "6/30"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "This is a conditional probability restricted to the sport-playing group: 6 senior sport-players out of 18 total sport-players. P = 6/18 = 1/3.",
-  "trick": "\"Given that they play a sport\" restricts the denominator to ONLY that group — ignore the students who don't play a sport entirely."
- },
- {
-  "id": "PR-CD-6",
-  "concept": "Probability & Counting",
-  "subtype": "Conditional (Dependent) Probability",
-  "passage": "A hat contains 4 winning tickets and 16 losing tickets. Two tickets are drawn without replacement.",
-  "question": "What is the probability that both tickets are winning tickets?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "1/25"
-   },
-   {
     "letter": "B",
-    "text": "1/19"
+    "text": "3/10"
    },
    {
     "letter": "C",
-    "text": "3/95"
+    "text": "1/3"
    },
    {
     "letter": "D",
-    "text": "4/95"
+    "text": "9/25"
    }
   ],
   "correctLetter": "C",
-  "explanation": "P(1st winning) = 4/20 = 1/5. With one winning ticket now gone, P(2nd winning) = 3/19. Multiply: 1/5 × 3/19 = 3/95.",
-  "trick": "Reduce the first fraction before multiplying if possible — it usually makes the second, uglier fraction easier to combine."
+  "explanation": "P(1st red) = 6/10. With one red marble now gone, P(2nd red) = 5/9. Multiply: (6/10)×(5/9) = 30/90 = 1/3.",
+  "trick": "\"Without replacement\" means the second probability's denominator (and numerator, if drawing the same color) shrinks by 1 — recompute it fresh."
  },
  {
-  "id": "PR-FC-1",
+  "id": "PR2-CD-2",
   "concept": "Probability & Counting",
-  "subtype": "Fundamental Counting Principle",
-  "passage": "A restaurant offers 4 types of shirts, 3 types of pants, and 2 types of shoes as part of a uniform.",
-  "question": "How many different complete outfits (one shirt, one pair of pants, one pair of shoes) are possible?",
+  "subtype": "Conditional (Dependent) Probability",
+  "passage": "Two cards are drawn from a standard deck, one at a time, without replacement.",
+  "question": "What is the probability that both cards are kings?",
   "choices": [
    {
     "letter": "A",
-    "text": "9"
+    "text": "1/2704"
    },
    {
     "letter": "B",
-    "text": "12"
+    "text": "1/221"
    },
    {
     "letter": "C",
-    "text": "18"
+    "text": "1/13"
    },
    {
     "letter": "D",
-    "text": "24"
+    "text": "1/17"
    }
   ],
-  "correctLetter": "D",
-  "explanation": "By the Fundamental Counting Principle, multiply the number of choices at each step: 4 × 3 × 2 = 24.",
-  "trick": "Whenever a problem has independent \"choices\" at separate steps, just multiply the number of options at each step."
+  "correctLetter": "B",
+  "explanation": "P(1st king)=4/52. With one king gone, P(2nd king)=3/51. Multiply: (4/52)×(3/51) = 12/2652 = 1/221.",
+  "trick": "Reduce each fraction before multiplying — it keeps the final multiplication manageable."
  },
  {
-  "id": "PR-FC-2",
+  "id": "PR2-CD-3",
+  "concept": "Probability & Counting",
+  "subtype": "Conditional (Dependent) Probability",
+  "passage": "A committee of 15 people includes 6 senior members. Two different members will be randomly selected, one after another, for two different roles.",
+  "question": "Given that the 1st person selected is a senior member, what is the probability that the 2nd person selected is also a senior member?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "1/3"
+   },
+   {
+    "letter": "B",
+    "text": "6/15"
+   },
+   {
+    "letter": "C",
+    "text": "5/14"
+   },
+   {
+    "letter": "D",
+    "text": "2/7"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "After 1 senior is selected, 14 members remain, of which 5 are still seniors: P = 5/14.",
+  "trick": "Once the first selection happens, recompute using only what's actually left — both the favorable count and total shrink by 1."
+ },
+ {
+  "id": "PR2-CD-4",
+  "concept": "Probability & Counting",
+  "subtype": "Conditional (Dependent) Probability",
+  "passage": "An urn contains 5 white balls and 3 black balls. Two balls are drawn without replacement.",
+  "question": "What is the probability that the 1st ball drawn is white AND the 2nd ball drawn is black?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "15/56"
+   },
+   {
+    "letter": "B",
+    "text": "3/8"
+   },
+   {
+    "letter": "C",
+    "text": "5/28"
+   },
+   {
+    "letter": "D",
+    "text": "5/8"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "P(1st white) = 5/8. With one white ball gone, 7 balls remain (4 white, 3 black), so P(2nd black) = 3/7. Multiply: (5/8)×(3/7) = 15/56.",
+  "trick": "Track exactly what changes after the first draw — only the drawn color's count decreases, everything else stays the same."
+ },
+ {
+  "id": "PR2-CD-5",
+  "concept": "Probability & Counting",
+  "subtype": "Conditional (Dependent) Probability",
+  "passage": "A box contains 12 flashlights, 3 of which have dead batteries. Two flashlights are selected at random, one after another, without replacement.",
+  "question": "What is the probability that the first flashlight works and the second flashlight also works?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "9/11"
+   },
+   {
+    "letter": "B",
+    "text": "9/16"
+   },
+   {
+    "letter": "C",
+    "text": "6/11"
+   },
+   {
+    "letter": "D",
+    "text": "3/4"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "P(1st works)=9/12=3/4. With one working flashlight now gone, P(2nd works)=8/11. Multiply: (3/4)×(8/11)=24/44=6/11.",
+  "trick": "\"Works\" means NOT dead — find that count first (12−3=9), then apply the same without-replacement logic."
+ },
+ {
+  "id": "PR2-FC-1",
   "concept": "Probability & Counting",
   "subtype": "Fundamental Counting Principle",
-  "passage": "A license plate consists of 3 letters followed by 3 digits. Letters and digits may repeat.",
+  "passage": "A license plate consists of 2 letters followed by 4 digits. Letters and digits may repeat.",
   "question": "How many different license plates are possible?",
   "choices": [
    {
     "letter": "A",
-    "text": "17,576"
+    "text": "6,760,000"
    },
    {
     "letter": "B",
-    "text": "1,000"
+    "text": "676,000"
    },
    {
     "letter": "C",
-    "text": "156"
+    "text": "67,600"
    },
    {
     "letter": "D",
-    "text": "17,576,000"
+    "text": "67,600,000"
    }
   ],
-  "correctLetter": "D",
-  "explanation": "There are 26 choices for each of the 3 letters and 10 choices for each of the 3 digits: 26×26×26×10×10×10 = 17,576,000.",
-  "trick": "\"May repeat\" means every position has the FULL set of choices available, with no reduction from previous picks."
+  "correctLetter": "A",
+  "explanation": "There are 26 choices for each of 2 letters and 10 choices for each of 4 digits: 26×26×10×10×10×10 = 6,760,000.",
+  "trick": "Multiply the number of choices at every position — letters and digits are handled the same way, just with different counts."
  },
  {
-  "id": "PR-FC-3",
+  "id": "PR2-FC-2",
   "concept": "Probability & Counting",
   "subtype": "Fundamental Counting Principle",
-  "passage": "A restaurant menu has 3 appetizers, 5 main courses, and 4 desserts.",
-  "question": "How many different 3-course meals (one appetizer, one main, one dessert) can be ordered?",
+  "passage": "A restaurant menu has 4 appetizers, 6 main courses, and 3 desserts.",
+  "question": "How many different 3-course meals (one from each category) are possible?",
   "choices": [
    {
     "letter": "A",
-    "text": "12"
+    "text": "13"
    },
    {
     "letter": "B",
-    "text": "20"
+    "text": "72"
    },
    {
     "letter": "C",
-    "text": "60"
+    "text": "36"
    },
    {
     "letter": "D",
-    "text": "120"
+    "text": "13!"
    }
   ],
-  "correctLetter": "C",
-  "explanation": "Multiply the choices at each course: 3 × 5 × 4 = 60.",
-  "trick": "\"How many different meals/outfits/combinations\" phrasing is the classic signal to apply the counting principle directly."
+  "correctLetter": "B",
+  "explanation": "Multiply the choices at each course: 4×6×3 = 72.",
+  "trick": "\"How many different meals/combinations\" is the classic signal to apply the counting principle directly."
  },
  {
-  "id": "PR-FC-4",
+  "id": "PR2-FC-3",
   "concept": "Probability & Counting",
   "subtype": "Fundamental Counting Principle",
-  "passage": "A 4-digit passcode is created using the digits 0–9, with no digit repeated.",
+  "passage": "A 4-digit passcode uses digits 0–9, with no digit repeated.",
   "question": "How many different passcodes are possible?",
   "choices": [
    {
     "letter": "A",
-    "text": "10,000"
+    "text": "40"
    },
    {
     "letter": "B",
@@ -11920,103 +12172,19 @@
    },
    {
     "letter": "D",
-    "text": "40"
+    "text": "10,000"
    }
   ],
   "correctLetter": "B",
-  "explanation": "The first digit has 10 choices, the second has 9 remaining, the third has 8, and the fourth has 7: 10×9×8×7 = 5,040.",
-  "trick": "\"No repeats\" means the number of available choices shrinks by exactly 1 at each subsequent step."
+  "explanation": "The first digit has 10 choices, the second has 9 remaining, the third has 8, the fourth has 7: 10×9×8×7=5,040.",
+  "trick": "\"No repeats\" means the available choices shrink by exactly 1 at each subsequent position."
  },
  {
-  "id": "PR-FC-5",
+  "id": "PR2-FC-4",
   "concept": "Probability & Counting",
   "subtype": "Fundamental Counting Principle",
-  "passage": "A 4-digit passcode is created using the digits 0–9, and digits MAY be repeated.",
-  "question": "How many different passcodes are possible?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "40"
-   },
-   {
-    "letter": "B",
-    "text": "5,040"
-   },
-   {
-    "letter": "C",
-    "text": "10,000"
-   },
-   {
-    "letter": "D",
-    "text": "40,000"
-   }
-  ],
-  "correctLetter": "C",
-  "explanation": "Each of the 4 positions independently has all 10 digits available: 10×10×10×10 = 10,000.",
-  "trick": "Compare this to the \"no repeats\" version — allowing repeats always gives a larger count, since no options are ever removed."
- },
- {
-  "id": "PR-PM-1",
-  "concept": "Probability & Counting",
-  "subtype": "Permutations",
-  "passage": "From a group of 8 finalists, first, second, and third place will be awarded.",
-  "question": "In how many different ways can the top 3 places be awarded?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "24"
-   },
-   {
-    "letter": "B",
-    "text": "56"
-   },
-   {
-    "letter": "C",
-    "text": "336"
-   },
-   {
-    "letter": "D",
-    "text": "512"
-   }
-  ],
-  "correctLetter": "C",
-  "explanation": "Since order matters (1st, 2nd, 3rd are distinct positions), this is a permutation: P(8,3) = 8×7×6 = 336.",
-  "trick": "Whenever positions or ranks are distinct (1st vs. 2nd vs. 3rd), order matters — use a permutation, not a combination."
- },
- {
-  "id": "PR-PM-2",
-  "concept": "Probability & Counting",
-  "subtype": "Permutations",
-  "passage": "Five people are lining up for a photo.",
-  "question": "In how many different orders can they be arranged?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "25"
-   },
-   {
-    "letter": "B",
-    "text": "60"
-   },
-   {
-    "letter": "C",
-    "text": "120"
-   },
-   {
-    "letter": "D",
-    "text": "3,125"
-   }
-  ],
-  "correctLetter": "C",
-  "explanation": "This is a permutation of all 5 people: 5! = 5×4×3×2×1 = 120.",
-  "trick": "\"Arrange all n items\" is always n! — the simplest permutation case."
- },
- {
-  "id": "PR-PM-3",
-  "concept": "Probability & Counting",
-  "subtype": "Permutations",
-  "passage": "A librarian is selecting and arranging 4 books, in order, on a shelf, chosen from a set of 6 different books.",
-  "question": "In how many ways can this be done?",
+  "passage": "A traveler is choosing among 3 airlines, 5 possible departure times, and 2 seating classes.",
+  "question": "How many different travel options does the traveler have?",
   "choices": [
    {
     "letter": "A",
@@ -12024,111 +12192,139 @@
    },
    {
     "letter": "B",
-    "text": "24"
+    "text": "60"
    },
    {
     "letter": "C",
-    "text": "360"
+    "text": "30"
    },
    {
     "letter": "D",
-    "text": "1,296"
+    "text": "10"
    }
   ],
   "correctLetter": "C",
-  "explanation": "Order matters and not all books are used: P(6,4) = 6×5×4×3 = 360.",
-  "trick": "When you're choosing AND arranging a subset of items, use nPr — this differs from arranging ALL n items (which would just be n!)."
+  "explanation": "Multiply the independent choices: 3×5×2 = 30.",
+  "trick": "Each independent category of choice gets multiplied together — order doesn't matter for the counting principle."
  },
  {
-  "id": "PR-PM-4",
+  "id": "PR2-FC-5",
+  "concept": "Probability & Counting",
+  "subtype": "Fundamental Counting Principle",
+  "passage": "A store sells custom T-shirts with a choice of 6 colors, 4 sizes, and 3 sleeve lengths.",
+  "question": "How many different T-shirt combinations can a customer order?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "13"
+   },
+   {
+    "letter": "B",
+    "text": "144"
+   },
+   {
+    "letter": "C",
+    "text": "24"
+   },
+   {
+    "letter": "D",
+    "text": "72"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "Multiply the choices: 6×4×3 = 72.",
+  "trick": "Every additional independent choice multiplies onto the running total — a fourth category would multiply again."
+ },
+ {
+  "id": "PR2-PM-1",
   "concept": "Probability & Counting",
   "subtype": "Permutations",
-  "passage": "Consider the word \"LEVEL,\" which has 5 letters: L appears twice, E appears twice, and V appears once.",
+  "passage": "From a group of 9 finalists, 1st, 2nd, 3rd, and 4th place will be awarded.",
+  "question": "In how many different ways can the top 4 places be awarded?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "126"
+   },
+   {
+    "letter": "B",
+    "text": "6,561"
+   },
+   {
+    "letter": "C",
+    "text": "3,024"
+   },
+   {
+    "letter": "D",
+    "text": "504"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Since order matters (distinct places), this is a permutation: P(9,4) = 9×8×7×6 = 3,024.",
+  "trick": "Distinct ranked positions always mean order matters — use a permutation, not a combination."
+ },
+ {
+  "id": "PR2-PM-2",
+  "concept": "Probability & Counting",
+  "subtype": "Permutations",
+  "passage": "Six different books are placed on a shelf.",
+  "question": "In how many different orders can all 6 books be arranged?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "36"
+   },
+   {
+    "letter": "B",
+    "text": "120"
+   },
+   {
+    "letter": "C",
+    "text": "720"
+   },
+   {
+    "letter": "D",
+    "text": "46,656"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "This is a permutation of all 6 books: 6! = 720.",
+  "trick": "\"Arrange all n items\" is always n! — the simplest permutation case."
+ },
+ {
+  "id": "PR2-PM-3",
+  "concept": "Probability & Counting",
+  "subtype": "Permutations",
+  "passage": "Consider the word \"STATS,\" which has 5 letters: S appears twice, T appears twice, and A appears once.",
   "question": "How many distinct arrangements of these 5 letters are possible?",
   "choices": [
    {
     "letter": "A",
-    "text": "24"
+    "text": "120"
    },
    {
     "letter": "B",
-    "text": "30"
-   },
-   {
-    "letter": "C",
     "text": "60"
    },
    {
-    "letter": "D",
-    "text": "120"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "Total arrangements of 5 letters would normally be 5! = 120, but since L repeats twice and E repeats twice, divide by 2! for each repeated letter: 120/(2!×2!) = 120/4 = 30.",
-  "trick": "Repeated letters always divide the total permutation count — divide by the factorial of each repeat count."
- },
- {
-  "id": "PR-PM-5",
-  "concept": "Probability & Counting",
-  "subtype": "Permutations",
-  "passage": "A company is assigning 3 distinct roles (Manager, Assistant Manager, and Secretary) to 3 different people chosen from a pool of 10 employees.",
-  "question": "In how many ways can these 3 roles be assigned?",
-  "choices": [
-   {
-    "letter": "A",
+    "letter": "C",
     "text": "30"
    },
    {
-    "letter": "B",
-    "text": "120"
-   },
-   {
-    "letter": "C",
-    "text": "720"
-   },
-   {
     "letter": "D",
-    "text": "1,000"
+    "text": "20"
    }
   ],
   "correctLetter": "C",
-  "explanation": "Since each role is distinct, order matters: P(10,3) = 10×9×8 = 720.",
-  "trick": "Distinct job titles or roles are exactly like ranked positions — always a permutation, never a combination."
+  "explanation": "Total arrangements of 5 letters would be 5!=120, but with S repeating twice and T repeating twice, divide by 2! for each: 120/(2!×2!) = 120/4 = 30.",
+  "trick": "Repeated letters always divide the total permutation count — divide by the factorial of each repeat count."
  },
  {
-  "id": "PR-CB-1",
+  "id": "PR2-PM-4",
   "concept": "Probability & Counting",
-  "subtype": "Combinations",
-  "passage": "A student must choose 3 electives from a list of 10 available electives. The order in which they are chosen does not matter.",
-  "question": "In how many ways can the student choose 3 electives?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "30"
-   },
-   {
-    "letter": "B",
-    "text": "120"
-   },
-   {
-    "letter": "C",
-    "text": "720"
-   },
-   {
-    "letter": "D",
-    "text": "1,000"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "Since order doesn't matter, this is a combination: C(10,3) = 10!/(3!·7!) = 120.",
-  "trick": "\"Order doesn't matter\" is the defining signal for a combination — contrast this with permutation problems that assign distinct roles."
- },
- {
-  "id": "PR-CB-2",
-  "concept": "Probability & Counting",
-  "subtype": "Combinations",
-  "passage": "A committee of 4 people is to be formed from a group of 12 people, with no distinct roles within the committee.",
-  "question": "In how many ways can this committee be formed?",
+  "subtype": "Permutations",
+  "passage": "A company is assigning 4 distinct roles (CEO, CFO, COO, and CTO) to 4 different people chosen from a pool of 12 candidates.",
+  "question": "In how many ways can these 4 roles be assigned?",
   "choices": [
    {
     "letter": "A",
@@ -12140,128 +12336,492 @@
    },
    {
     "letter": "C",
-    "text": "11,880"
+    "text": "20,736"
    },
    {
     "letter": "D",
-    "text": "20,736"
+    "text": "11,880"
    }
   ],
-  "correctLetter": "B",
-  "explanation": "Since committee members have no distinct roles, order doesn't matter: C(12,4) = 12!/(4!·8!) = 495.",
-  "trick": "\"Committee with no distinct roles\" is a strong combination signal — compare to \"assign specific roles,\" which would be a permutation."
+  "correctLetter": "D",
+  "explanation": "Since each role is distinct, order matters: P(12,4) = 12×11×10×9 = 11,880.",
+  "trick": "Distinct job titles are exactly like ranked positions — always a permutation, never a combination."
  },
  {
-  "id": "PR-CB-3",
+  "id": "PR2-PM-5",
   "concept": "Probability & Counting",
-  "subtype": "Combinations",
-  "passage": "A teacher is selecting 5 students from a class of 25 to form a discussion group, where all 5 selected students have the same role.",
-  "question": "Which of the following correctly calculates the number of possible groups?",
+  "subtype": "Permutations",
+  "passage": "Five runners compete in a race, and the top 3 finishers receive gold, silver, and bronze medals, respectively.",
+  "question": "In how many different ways can the 3 medals be awarded?",
   "choices": [
    {
     "letter": "A",
-    "text": "C(25,5)"
+    "text": "60"
    },
    {
     "letter": "B",
-    "text": "P(25,5)"
+    "text": "125"
    },
    {
     "letter": "C",
-    "text": "25⁵"
+    "text": "10"
    },
    {
     "letter": "D",
-    "text": "5!"
+    "text": "15"
    }
   ],
   "correctLetter": "A",
-  "explanation": "Since all selected students have the same role (no ranking or distinct positions), this is a combination: C(25,5).",
-  "trick": "When a problem only asks WHICH items are chosen, not the order or role, the answer is always a combination formula."
+  "explanation": "Since the medals are distinct positions, order matters: P(5,3) = 5×4×3 = 60.",
+  "trick": "Different medal colors ARE different positions — this is always a permutation problem."
  },
  {
-  "id": "PR-CB-4",
+  "id": "PR2-CB-1",
   "concept": "Probability & Counting",
   "subtype": "Combinations",
-  "passage": "A standard 52-card deck is used to deal a 5-card hand, where the order the cards are dealt in doesn't matter.",
-  "question": "How many different 5-card hands are possible?",
+  "passage": "A student must choose 5 electives from a list of 12 available electives, where the order chosen doesn't matter.",
+  "question": "In how many ways can the student choose 5 electives?",
   "choices": [
    {
     "letter": "A",
+    "text": "248,832"
+   },
+   {
+    "letter": "B",
+    "text": "95,040"
+   },
+   {
+    "letter": "C",
+    "text": "792"
+   },
+   {
+    "letter": "D",
+    "text": "60"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Since order doesn't matter, this is a combination: C(12,5) = 12!/(5!·7!) = 792.",
+  "trick": "\"Order doesn't matter\" is the defining signal for a combination problem."
+ },
+ {
+  "id": "PR2-CB-2",
+  "concept": "Probability & Counting",
+  "subtype": "Combinations",
+  "passage": "A committee of 5 people is to be formed from a group of 20 people, with no distinct roles within the committee.",
+  "question": "In how many ways can this committee be formed?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "2,432,902,008,176,640,000"
+   },
+   {
+    "letter": "B",
+    "text": "100"
+   },
+   {
+    "letter": "C",
+    "text": "1,860,480"
+   },
+   {
+    "letter": "D",
+    "text": "15,504"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "Since committee members have no distinct roles, order doesn't matter: C(20,5) = 15,504.",
+  "trick": "\"No distinct roles\" is a strong combination signal — contrast with assigning specific titles, which would be a permutation."
+ },
+ {
+  "id": "PR2-CB-3",
+  "concept": "Probability & Counting",
+  "subtype": "Combinations",
+  "passage": "A standard 52-card deck is used to deal a 6-card hand, where the order the cards are dealt doesn't matter.",
+  "question": "How many different 6-card hands are possible?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "20,358,520"
+   },
+   {
+    "letter": "B",
+    "text": "14,658,134,400"
+   },
+   {
+    "letter": "C",
     "text": "2,598,960"
    },
    {
-    "letter": "B",
-    "text": "311,875,200"
-   },
-   {
-    "letter": "C",
-    "text": "3,764,800"
-   },
-   {
     "letter": "D",
-    "text": "52⁵"
+    "text": "52⁶"
    }
   ],
   "correctLetter": "A",
-  "explanation": "Since a hand is just a set of cards (order doesn't matter), this is a combination: C(52,5) = 2,598,960.",
-  "trick": "Card \"hands\" are a classic real-world combination — the cards you hold don't depend on the order you were dealt them."
+  "explanation": "Since a hand is just a set of cards, this is a combination: C(52,6) = 20,358,520.",
+  "trick": "Card hands are a classic combination — the cards you hold don't depend on the order dealt."
  },
  {
-  "id": "PR-CB-5",
+  "id": "PR2-CB-4",
   "concept": "Probability & Counting",
   "subtype": "Combinations",
-  "passage": "A pizza shop offers 8 possible toppings, and a customer can choose any 3 of them for a specialty pizza.",
-  "question": "How many different 3-topping combinations are possible?",
+  "passage": "A pizza shop offers 10 possible toppings, and a customer can choose any 4 of them.",
+  "question": "How many different 4-topping combinations are possible?",
   "choices": [
    {
     "letter": "A",
-    "text": "24"
+    "text": "5,040"
    },
    {
     "letter": "B",
-    "text": "56"
+    "text": "10,000"
    },
    {
     "letter": "C",
+    "text": "210"
+   },
+   {
+    "letter": "D",
+    "text": "40"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Since the order of toppings doesn't matter, use a combination: C(10,4) = 210.",
+  "trick": "Toppings and other \"selections\" where order is irrelevant are combination problems, not permutations."
+ },
+ {
+  "id": "PR2-CB-5",
+  "concept": "Probability & Counting",
+  "subtype": "Combinations",
+  "passage": "A team of 3 people will be chosen at random from a group of 8 women and 5 men.",
+  "question": "How many different all-women teams of 3 are possible?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "1,287"
+   },
+   {
+    "letter": "B",
     "text": "336"
    },
    {
-    "letter": "D",
-    "text": "512"
-   }
-  ],
-  "correctLetter": "B",
-  "explanation": "Since the order of toppings doesn't matter, use a combination: C(8,3) = 8!/(3!·5!) = 56.",
-  "trick": "Toppings, ingredients, and other \"selections\" where order is irrelevant are combination problems, not permutations."
- },
- {
-  "id": "PR-CB-6",
-  "concept": "Probability & Counting",
-  "subtype": "Combinations",
-  "passage": "A group consists of 5 men and 6 women. A subgroup of 3 people is chosen at random from the entire group of 11.",
-  "question": "How many different subgroups consisting of all women are possible?",
-  "choices": [
-   {
-    "letter": "A",
-    "text": "6"
-   },
-   {
-    "letter": "B",
-    "text": "20"
-   },
-   {
     "letter": "C",
     "text": "56"
    },
    {
     "letter": "D",
-    "text": "165"
+    "text": "504"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Choosing 3 women from the 8 available women (order doesn't matter): C(8,3) = 56.",
+  "trick": "When a problem restricts the selection to one subgroup (\"all women\"), apply the combination formula only to that subgroup's size."
+ },
+ {
+  "id": "PR2-CB-6",
+  "concept": "Probability & Counting",
+  "subtype": "Combinations",
+  "passage": "There are 10 points on a circle, no 3 of which are collinear.",
+  "question": "How many distinct line segments can be drawn connecting any 2 of these points?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "90"
+   },
+   {
+    "letter": "B",
+    "text": "10"
+   },
+   {
+    "letter": "C",
+    "text": "45"
+   },
+   {
+    "letter": "D",
+    "text": "20"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Since a segment between 2 points doesn't depend on which one is \"first,\" this is a combination: C(10,2) = 45.",
+  "trick": "Segments/lines between points are always combinations — connecting point A to B is the same segment as B to A."
+ },
+ {
+  "id": "PR2-BP-8",
+  "concept": "Probability & Counting",
+  "subtype": "Basic Probability",
+  "passage": "A bag contains 4 red marbles, 6 blue marbles, and 5 green marbles.",
+  "question": "What is the probability that a marble drawn at random is red or green?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "3/4"
+   },
+   {
+    "letter": "B",
+    "text": "9/15"
+   },
+   {
+    "letter": "C",
+    "text": "2/3"
+   },
+   {
+    "letter": "D",
+    "text": "3/5"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "There are 4+5=9 red-or-green marbles out of 15 total: 9/15 = 3/5.",
+  "trick": "For \"A or B\" with non-overlapping categories (a marble can't be two colors at once), just add the favorable counts."
+ },
+ {
+  "id": "PR2-BP-9",
+  "concept": "Probability & Counting",
+  "subtype": "Basic Probability",
+  "passage": "A raffle has 500 total entries, with exactly 1 grand-prize-winning entry.",
+  "question": "If you hold exactly 1 entry, what is the probability that it's the winning entry?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "1/500"
+   },
+   {
+    "letter": "B",
+    "text": "1/50"
+   },
+   {
+    "letter": "C",
+    "text": "1/5"
+   },
+   {
+    "letter": "D",
+    "text": "500"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "There is exactly 1 favorable outcome out of 500 total entries: 1/500.",
+  "trick": "Single-winner raffle problems are the simplest probability form: 1 over the total number of entries."
+ },
+ {
+  "id": "PR2-CM-7",
+  "concept": "Probability & Counting",
+  "subtype": "Complementary & Mutually Exclusive Events",
+  "passage": "Events A and B are mutually exclusive, with P(A)=0.6 and P(B)=0.15.",
+  "question": "What is P(A or B)?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "0.45"
+   },
+   {
+    "letter": "B",
+    "text": "0.75"
+   },
+   {
+    "letter": "C",
+    "text": "0.09"
+   },
+   {
+    "letter": "D",
+    "text": "0.9"
    }
   ],
   "correctLetter": "B",
-  "explanation": "Choosing 3 women from the 6 available women (order doesn't matter): C(6,3) = 6!/(3!·3!) = 20.",
-  "trick": "When a problem restricts the selection to one subgroup (\"all women\"), apply the combination formula only to that subgroup's size, ignoring the rest."
+  "explanation": "For mutually exclusive events, add the probabilities directly: 0.6+0.15=0.75.",
+  "trick": "Mutually exclusive is the simplest \"or\" case — just add, no overlap to worry about."
+ },
+ {
+  "id": "PR2-IE-7",
+  "concept": "Probability & Counting",
+  "subtype": "Independent Events & Multiplication Rule",
+  "passage": "A student has an 80% chance of passing a math quiz and, independently, a 70% chance of passing a science quiz.",
+  "question": "What is the probability that the student passes both quizzes?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "0.56"
+   },
+   {
+    "letter": "B",
+    "text": "0.14"
+   },
+   {
+    "letter": "C",
+    "text": "0.75"
+   },
+   {
+    "letter": "D",
+    "text": "0.5"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "Since the events are independent, multiply: 0.8×0.7=0.56.",
+  "trick": "Two separate subjects with independent pass rates: multiply the two probabilities directly."
+ },
+ {
+  "id": "PR2-CD-6",
+  "concept": "Probability & Counting",
+  "subtype": "Conditional (Dependent) Probability",
+  "passage": "A bag contains 4 red balls and 5 blue balls. Three balls are drawn one at a time, without replacement.",
+  "question": "What is the probability that all 3 balls drawn are red?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "1/21"
+   },
+   {
+    "letter": "B",
+    "text": "8/125"
+   },
+   {
+    "letter": "C",
+    "text": "4/9"
+   },
+   {
+    "letter": "D",
+    "text": "4/45"
+   }
+  ],
+  "correctLetter": "A",
+  "explanation": "P(1st red)=4/9. P(2nd red)=3/8. P(3rd red)=2/7. Multiply: (4/9)(3/8)(2/7) = 24/504 = 1/21.",
+  "trick": "For \"all draws are X without replacement,\" multiply a chain of shrinking fractions — one factor per draw."
+ },
+ {
+  "id": "PR2-FC-6",
+  "concept": "Probability & Counting",
+  "subtype": "Fundamental Counting Principle",
+  "passage": "A clothing store lets customers build an outfit from 5 shirts, 4 pairs of pants, 3 pairs of shoes, and 2 belts.",
+  "question": "How many different complete outfits (one of each item) are possible?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "240"
+   },
+   {
+    "letter": "B",
+    "text": "14"
+   },
+   {
+    "letter": "C",
+    "text": "60"
+   },
+   {
+    "letter": "D",
+    "text": "120"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "Multiply the choices at each step: 5×4×3×2 = 120.",
+  "trick": "Adding a 4th category of choice just means one more factor in the multiplication — the counting principle scales to any number of categories."
+ },
+ {
+  "id": "PR2-PM-6",
+  "concept": "Probability & Counting",
+  "subtype": "Permutations",
+  "passage": "From a group of 10 people, 4 will be selected and arranged in a row for a photo.",
+  "question": "In how many different ways can this be done?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "210"
+   },
+   {
+    "letter": "B",
+    "text": "10,000"
+   },
+   {
+    "letter": "C",
+    "text": "5,040"
+   },
+   {
+    "letter": "D",
+    "text": "40,320"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Since order matters (a specific row arrangement), this is a permutation: P(10,4) = 10×9×8×7 = 5,040.",
+  "trick": "Selecting AND arranging a subset of people is a permutation — different from simply choosing who's in the photo."
+ },
+ {
+  "id": "PR2-PM-7",
+  "concept": "Probability & Counting",
+  "subtype": "Permutations",
+  "passage": "Six people are to be seated around a circular table. (Note: for circular arrangements, one position is fixed as a reference point, since rotations of the same arrangement are considered identical.)",
+  "question": "In how many distinct ways can the 6 people be seated around the table?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "720"
+   },
+   {
+    "letter": "B",
+    "text": "46,656"
+   },
+   {
+    "letter": "C",
+    "text": "120"
+   },
+   {
+    "letter": "D",
+    "text": "30"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Circular permutations of n people are (n−1)!: (6−1)! = 5! = 120.",
+  "trick": "Circular arrangements use (n−1)!, not n! — fixing one person's seat removes the duplicate rotations."
+ },
+ {
+  "id": "PR2-CB-7",
+  "concept": "Probability & Counting",
+  "subtype": "Combinations",
+  "passage": "A group consists of 6 men and 8 women. A subcommittee of 2 men and 2 women will be chosen.",
+  "question": "How many different subcommittees are possible?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "210"
+   },
+   {
+    "letter": "B",
+    "text": "91"
+   },
+   {
+    "letter": "C",
+    "text": "1,001"
+   },
+   {
+    "letter": "D",
+    "text": "420"
+   }
+  ],
+  "correctLetter": "D",
+  "explanation": "Choose the men and women separately, then multiply: C(6,2)×C(8,2) = 15×28 = 420.",
+  "trick": "When a selection has separate requirements for two groups, compute each group's combination separately and multiply the results."
+ },
+ {
+  "id": "PR2-CB-8",
+  "concept": "Probability & Counting",
+  "subtype": "Combinations",
+  "passage": "A 6-card hand is dealt from a standard 52-card deck.",
+  "question": "How many different 6-card hands consist entirely of cards from a single suit?",
+  "choices": [
+   {
+    "letter": "A",
+    "text": "20,358,520"
+   },
+   {
+    "letter": "B",
+    "text": "78"
+   },
+   {
+    "letter": "C",
+    "text": "6,864"
+   },
+   {
+    "letter": "D",
+    "text": "1,716"
+   }
+  ],
+  "correctLetter": "C",
+  "explanation": "Choose 6 cards from one 13-card suit: C(13,6)=1,716. Since there are 4 suits to choose from, multiply: 1,716×4=6,864.",
+  "trick": "When a selection must come from one of several separate groups, find the count for one group, then multiply by the number of groups."
  },
  {
   "id": "MX-DN-1",
